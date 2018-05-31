@@ -1,25 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Nav from '../components/Nav'
+import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Container, Div } from '../assets/Matrix'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <Container>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Portfolio' },
         { name: 'keywords', content: 'Architect, Site' },
       ]}
-    />
-    <Div modifiers={['mt2R', 'tCenter']}>
-      <Nav />
+    >
+      <body style='margin:0; padding:0;' />
+    </Helmet>
+    <Div>
+      <Header />
       {children()}
       <Footer />
     </Div>
-  </div>
+  </Container>
 )
 
 Layout.propTypes = {

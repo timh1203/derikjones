@@ -38,6 +38,9 @@ export const Modifiers = {
   faiCenter: () => `
     align-items: center;
   `,
+  fasCenter: () => `
+    align-self: center;
+  `,
   f1: () => `
     flex: 1;
   `,
@@ -51,6 +54,12 @@ export const Modifiers = {
   `,
   p1: () => `
     padding: 1rem;
+  `,
+  p2: () => `
+    padding: 2rem;
+  `,
+  p3: () => `
+    padding: 3rem;
   `,
   py1: () => `
     padding: 1rem 0;
@@ -75,6 +84,9 @@ export const Modifiers = {
   `,
   
   // Window
+  wA: () => `
+    width: auto;
+  `,
   w25: () => `
     width: 25%;
   `,
