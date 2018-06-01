@@ -1,0 +1,14 @@
+import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Nav from '../components/Nav'
+import { Wrapper, H1 } from '../assets/Matrix'
+
+const Project2 = () => (
+  <Wrapper>
+    <Nav />
+    <H1>Project2</H1>
+  </Wrapper>
+)
+
+export default Project2

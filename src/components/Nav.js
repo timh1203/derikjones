@@ -6,7 +6,9 @@ import { Section, Div, H1, Img } from '../assets/Matrix'
 const Nav = () => (
   <Section modifiers={['dFlex', 'fjcBetween']}>
       <Div modifiers={['tCenter']}>
-        <Img modifiers={['w50']} src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
+        <Link to='/'>
+          <Img modifiers={['w50']} src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
+        </Link>
       </Div>
       <Div modifiers={['dFlex', 'w25', 'fjcBetween', 'p2']}>
         <Link to="/">

@@ -17,7 +17,6 @@ const Layout = ({ children, data }) => (
       <body style='margin:0; padding:0;' />
     </Helmet>
     <Div>
-      <Header />
       {children()}
       <Footer />
     </Div>
