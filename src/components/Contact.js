@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Section, H1 } from '../assets/Matrix'
 
 const Contact = () => (
-  <Section>
+  <Section id='Contact'>
     <H1>Contact Section</H1>
   </Section>
 )

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Section, Div, H1, P, Img } from '../assets/Matrix'
 
 const Portfolio = () => (
-  <Section>
+  <Section id='Portfolio'>
     <H1>Portfolio Section</H1>
     <Div modifiers={['dFlex', 'fjcBetween', 'tCenter']}>
       <Div>

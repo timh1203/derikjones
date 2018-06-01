@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Section, H1 } from '../assets/Matrix'
 
 const Photos = () => (
-  <Section>
+  <Section id='Photos'>
     <H1>Photos Section</H1>
   </Section>
 )
