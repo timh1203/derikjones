@@ -9,7 +9,7 @@ const Portfolio = () => (
     <Div modifiers={['dFlex', 'fjcBetween', 'tCenter']}>
       <Div>
         <Link to='/project1'>
-          <Img modifiers={['w75', 'tCenter']} src='https://i.imgur.com/k0dZG6j.png' alt='Project 1' />
+          <Img modifiers={['w75']} src='https://i.imgur.com/k0dZG6j.png' alt='Project 1' />
         </Link>
         <H1>Project 1 Title</H1>
         <P>Project 1 Description</P>
