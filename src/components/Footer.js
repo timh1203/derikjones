@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Section, H1 } from '../assets/Matrix'
+import { Section, H1, P } from '../assets/Matrix'
 
 const Footer = () => (
-  <Section>
-    <H1>Footer Section</H1>
+  <Section modifiers={['bBlack', 'cWhite', 'tCenter']}>
+    <P modifiers={['m0', 'p0']}>Copyright © 2018 Derik S. Jones</P>
   </Section>
 )
 
