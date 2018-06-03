@@ -7,7 +7,7 @@ import Contact from '../components/Contact'
 import { Wrapper, H1 } from '../assets/Matrix'
 
 const IndexPage = () => (
-  <Wrapper>
+  <Wrapper modifiers={['m0', 'p0']}>
     <Header />
     <Portfolio />
     <Photos />

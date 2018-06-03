@@ -119,6 +119,9 @@ export const Modifiers = {
   cWhite: () => `
     color: white;
   `,
+  bBlack: () => `
+    background: black;
+  `,
 
   // Font
   fRaleway: () => `

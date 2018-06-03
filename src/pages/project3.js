@@ -2,20 +2,18 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Nav from '../components/Nav'
-import { Wrapper, Div, H1, Img, A } from '../assets/Matrix'
+import { Wrapper, H1, Img, A } from '../assets/Matrix'
 
 const Project3 = () => (
   <Wrapper>
     <Nav />
     <H1>Project3</H1>
-    <A href='https://i.imgur.com/WMBCRUA.png'>
-      <Img modifiers={['w100']} src='https://i.imgur.com/WMBCRUA.png' alt='Picture 3b' />
-    </A>
-    
     <A href='https://i.imgur.com/qXkvDah.png'>
       <Img modifiers={['w100']} src='https://i.imgur.com/qXkvDah.png' alt='Picture 3a' />
     </A>
-
+    <A href='https://i.imgur.com/WMBCRUA.png'>
+      <Img modifiers={['w100']} src='https://i.imgur.com/WMBCRUA.png' alt='Picture 3b' />
+    </A>
     <A href='https://i.imgur.com/WZQFqp7.png'>
       <Img modifiers={['w100']} src='https://i.imgur.com/WZQFqp7.png' alt='Picture 3c' />
     </A>

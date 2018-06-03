@@ -4,9 +4,9 @@ import styled from 'styled-components'
 import { Section, Div, Form, Input, Textarea, H1 } from '../assets/Matrix'
 
 const Contact = () => (
-  <Section id='Contact' modifiers={['tCenter']}>
+  <Section id='Contact'>
     <H1>Contact Section</H1>
-    <Div id="emailForm">
+    <Div id="emailForm"  modifiers={['tCenter']}>
         <Form id="contact-form" modifiers={['dFlex', 'fColumn', 'w50', 'm0A']} action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
           <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
           <Input className="hidden" type="hidden" name="_gotcha" />
