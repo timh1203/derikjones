@@ -162,4 +162,10 @@ export const Modifiers = {
   lsNone: () => `
     list-style: none;
   `,
+  bRadius50: () => `
+    border-radius: 50%;
+  `,
+  borderBlack: () => `
+    border: 5px double black;
+  `,
 }
