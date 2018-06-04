@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import { Section, Div, Img, H1, P } from '../assets/Matrix'
+import { Section, Div, Img, H1, P, A } from '../assets/Matrix'
 
 const Footer = () => (
   <Section>
@@ -16,25 +16,29 @@ const Footer = () => (
       </P>
       
       <Div modifiers={['tCenter']}>
-        <FaLinkedinSquare 
-          style={{
-            color: '#0077B5',
-            border: '1px solid #0077B5',
-            borderRadius: '10%',
-            boxShadow: '0px 3px 10px rgba(0,0,0,.25)'
-          }} 
-          size={50} 
-        />
-        <FaInstagram 
-          style={{
-            color: 'white',
-            borderRadius: '10%',
-            background: '#d6249f',
-            background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
-            boxShadow: '0px 3px 10px rgba(0,0,0,.25)'
-          }}
-          size={50}
-        />
+        <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
+          <FaLinkedinSquare 
+            style={{
+              color: '#0077B5',
+              border: '1px solid #0077B5',
+              borderRadius: '10%',
+              boxShadow: '0px 3px 10px rgba(0,0,0,.25)'
+            }} 
+            size={50} 
+          />
+        </A>
+        <A href='https://www.instagram.com/rad_jones_photography/'>
+          <FaInstagram 
+            style={{
+              color: 'white',
+              borderRadius: '10%',
+              background: '#d6249f',
+              background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
+              boxShadow: '0px 3px 10px rgba(0,0,0,.25)'
+            }}
+            size={50}
+          />
+        </A>
       </Div>
     </Div>
   </Section>

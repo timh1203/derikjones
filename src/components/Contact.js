@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Section, Div, Form, Input, Textarea, H1 } from '../assets/Matrix'
+import { Div, Form, Input, Textarea, H1 } from '../assets/Matrix'
 
 const Contact = () => (
-  <Section id='Contact'>
+  <SectionResponse id='Contact'>
     <H1>Contact Section</H1>
     <Div id="emailForm"  modifiers={['tCenter']}>
         <Form id="contact-form" modifiers={['dFlex', 'fColumn', 'w50', 'm0A']} action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
@@ -17,7 +17,14 @@ const Contact = () => (
           <Input id="send" type="submit" value="Send" />
         </Form>
     </Div>
-  </Section>
+  </SectionResponse>
 )
+
+const SectionResponse = styled.section`
+  color: white;
+  height: 100vh;
+  background: no-repeat center center url('https://i.imgur.com/sgzH36g.png');
+  background-size: cover;
+`
 
 export default Contact
