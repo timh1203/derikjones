@@ -6,11 +6,10 @@ import FaInstagram from 'react-icons/lib/fa/instagram'
 import { Section, Div, Img, H1, P, A } from '../assets/Matrix'
 
 const Footer = () => (
-  <Section>
+  <Section id='Bio'>
     <H1>Bio Section</H1>
-
     <Div modifiers={['w50', 'm0A', 'tCenter']}>
-      <Img modifiers={['bRadius50', 'w25', 'borderBlack']} src='http://derikjones.com/static/derikjones.14076d66.jpg' />
+      <Img modifiers={['bRadius50', 'w25', 'borderBlack']} src='https://i.imgur.com/vxJq5Wl.jpg' />
       <P>
         I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
       </P>

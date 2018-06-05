@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Section, Div, H1, P, Img } from '../assets/Matrix'
+import { Div, H1, P, Img } from '../assets/Matrix'
 
 const Models = () => (
-  <Section id='Models'>
-    <H1>Models Section</H1>
+  <Div>
+    <P>3d/modeling</P>
     <Div modifiers={['dFlex', 'fjcAround', 'tCenter']}>
       <Div>
         <Link to='/model1'>
@@ -18,7 +18,7 @@ const Models = () => (
         <Link to='/model2'>
           <Img modifiers={['w75']} src='https://i.imgur.com/yGY60ZS.png' alt='model 2' />
         </Link>
-        <H1>model 2 Title</H1>
+        <H1>Model 2 Title</H1>
         <P>Model 3 Description</P>
       </Div>
       <Div>
@@ -29,7 +29,7 @@ const Models = () => (
         <P>Model 3 Description</P>
       </Div>
     </Div>
-  </Section>
+  </Div>
 )
 
 export default Models

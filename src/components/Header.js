@@ -11,7 +11,7 @@ const Header = () => (
       <H1>Design</H1>
     </Div>
     <Div modifiers={['fasCenter']}>
-      <Link to="/"><H1>⬇️</H1></Link>
+      <Link to="/#Bio"><H1>⬇</H1></Link>
     </Div>
   </SectionResponse>
 )
