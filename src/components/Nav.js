@@ -11,6 +11,9 @@ const Nav = () => (
         </Link>
       </Div>
       <Div modifiers={['dFlex', 'w25', 'fjcBetween', 'p2']}>
+        <Link to="/#Models">
+          <H1>Models</H1>
+        </Link>
         <Link to="/#Portfolio">
           <H1>Portfolio</H1>
         </Link>
