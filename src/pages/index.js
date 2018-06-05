@@ -9,7 +9,7 @@ import Contact from '../components/Contact'
 import { Wrapper, H1 } from '../assets/Matrix'
 
 const IndexPage = () => (
-  <Wrapper modifiers={['m0', 'p0']}>
+  <Wrapper modifiers={['p0']}>
     <Header />
     <Bio />
     <Models />

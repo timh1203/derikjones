@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import './index.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Container, Body, Div } from '../assets/Matrix'
 
 const Layout = ({ children, data }) => (
-  <Container modifiers={['m0', 'p0']}>
+  <Container>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -14,9 +15,8 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'Architect, Site' },
       ]}
     >
-      <body style='margin: 0;'></body>
     </Helmet>
-    <Div modifiers={['m0', 'p0']}>
+    <Div>
       {children()}
       <Footer />
     </Div>
