@@ -4,24 +4,55 @@ import styled from 'styled-components'
 import { Div, H1, Img } from '../assets/Matrix'
 
 const Nav = () => (
-  <Div modifiers={['dFlex', 'fjcBetween']}>
-      <Div modifiers={['tCenter']}>
-        <Link to='/'>
-          <Img modifiers={['w50']} src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
-        </Link>
-      </Div>
-      <Div modifiers={['dFlex', 'w25', 'fjcBetween', 'p2']}>
-        <Link to="/#Portfolio">
-          <H1>Portfolio</H1>
-        </Link>
-        <Link to="/#Photos">
-          <H1>Photos</H1>
-        </Link>
-        <Link to="/#Contact">
-          <H1>Contact</H1>
-        </Link>
-      </Div>
-  </Div>
+  <DivResponse1 modifiers={['dGrid']}>
+    <Div>
+      <Link to='/'>
+        <Img modifiers={['w50']} src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
+      </Link>
+    </Div>
+    <DivResponse2>
+      <Link to="/#Portfolio"
+        activeStyle={{
+          color: '#212121',
+          textDecoration: 'none',
+          textShadow: '2px 2px 3px #d8d8d8'
+        }}>
+        <H1>PORTFOLIO</H1>
+      </Link>
+      <Link to="/#Gallery"
+        activeStyle={{
+          color: '#212121',
+          textDecoration: 'none',
+          textShadow: '2px 2px 3px #d8d8d8'
+        }}
+      >
+        <H1>GALLERY</H1>
+      </Link>
+      <Link to="/#Contact"
+        activeStyle={{
+          color: '#212121',
+          textDecoration: 'none',
+          textShadow: '2px 2px 3px #d8d8d8'
+        }}
+      >
+        <H1>CONTACT</H1>
+      </Link>
+    </DivResponse2>
+  </DivResponse1>
 )
+
+const DivResponse1 = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+`
+
+const DivResponse2 = styled.div`
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 100px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  justify-items: end;
+`
 
 export default Nav

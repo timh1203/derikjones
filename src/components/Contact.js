@@ -22,7 +22,7 @@ const Contact = () => (
 
 const SectionResponse = styled.section`
   color: white;
-  height: 100vh;
+  height: 50vh;
   background: no-repeat center center url('https://i.imgur.com/sgzH36g.png');
   background-size: cover;
 `
