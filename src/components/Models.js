@@ -5,7 +5,7 @@ import { Div, H1, P, Img } from '../assets/Matrix'
 
 const Models = () => (
   <Div>
-    <P>3d/modeling</P>
+    <P modifiers={['tCenter', 'ul']}>3d/Modeling</P>
     <Div modifiers={['dFlex', 'fjcAround', 'tCenter']}>
       <Div>
         <Link to='/model1'>

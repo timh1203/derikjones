@@ -3,6 +3,7 @@ import { applyStyleModifiers } from 'styled-components-modifiers'
 import { Modifiers } from './Modifiers'
 
 export const Container = styled.div`
+  font-family: 'Montserrat', sans-serif;
   ${applyStyleModifiers(Modifiers)}
 `
 
@@ -39,6 +40,7 @@ export const Title = styled.h1`
   ${applyStyleModifiers(Modifiers)}
 `
 export const H1 = styled.h1`
+  font-family: 'Crimson Text', serif;
   ${applyStyleModifiers(Modifiers)}
 `
 
@@ -66,14 +68,26 @@ export const Iframe = styled.iframe`
 `
 
 export const Img = styled.img`
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #cccccc;
   ${applyStyleModifiers(Modifiers)}
 `
 
 export const Input = styled.input`
+  font-size: 1rem;
+  width: 30rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  font-family: 'Crimson Text', serif;
   ${applyStyleModifiers(Modifiers)}
 `
 
 export const Textarea = styled.textarea`
+  font-size: 1rem;
+  width: 30rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  font-family: 'Crimson Text', serif;
   ${applyStyleModifiers(Modifiers)}
 `
 
@@ -86,6 +100,7 @@ export const Object = styled.object`
 `
 
 export const P = styled.p`
+  font-family: 'Crimson Text', serif;
   ${applyStyleModifiers(Modifiers)}
 `
 

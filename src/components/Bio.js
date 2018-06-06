@@ -5,15 +5,15 @@ import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaInstagram from 'react-icons/lib/fa/instagram'
 import { Section, Div, Img, H1, P, A } from '../assets/Matrix'
 
-const Footer = () => (
+const Bio = () => (
   <Section id='Bio' modifiers={['vh50']}>
     <Div modifiers={['w50', 'm0A', 'tCenter']}>
       <H1>Whatever good things we build end up building us.</H1>
       <P>-Jim Rohn</P>
       <Img modifiers={['bRadius50', 'w25', 'borderBlack']} src='https://i.imgur.com/vxJq5Wl.jpg' />
-      <P>
+      <PResponse>
         I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
-      </P>
+      </PResponse>
       
       <Div>
         <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
@@ -46,4 +46,8 @@ const Footer = () => (
   </Section>
 )
 
-export default Footer
+const PResponse = styled.p`
+  font-family: 'Crimson Text', serif;
+  font-size: 1.5rem;
+`
+export default Bio

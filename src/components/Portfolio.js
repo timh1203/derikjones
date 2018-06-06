@@ -7,7 +7,7 @@ import { Section, Div, H1, P, Img } from '../assets/Matrix'
 
 const Portfolio = () => (
   <Section id='Portfolio'>
-    <H1>Portfolio Section</H1>
+    <H1 modifiers={['ol']}>Portfolio</H1>
     <Models />
     <Projects />
   </Section>

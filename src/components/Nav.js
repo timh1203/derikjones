@@ -14,25 +14,22 @@ const Nav = () => (
       <Link to="/#Portfolio"
         activeStyle={{
           color: '#212121',
-          textDecoration: 'none',
-          textShadow: '2px 2px 3px #d8d8d8'
+          fontSize: '0.6rem'
         }}>
         <H1>PORTFOLIO</H1>
       </Link>
-      <Link to="/#Gallery"
+      <Link to="/#Photos"
         activeStyle={{
           color: '#212121',
-          textDecoration: 'none',
-          textShadow: '2px 2px 3px #d8d8d8'
+          fontSize: '0.6rem'
         }}
       >
-        <H1>GALLERY</H1>
+        <H1>PHOTOS</H1>
       </Link>
       <Link to="/#Contact"
         activeStyle={{
           color: '#212121',
-          textDecoration: 'none',
-          textShadow: '2px 2px 3px #d8d8d8'
+          fontSize: '0.6rem'
         }}
       >
         <H1>CONTACT</H1>
@@ -50,9 +47,10 @@ const DivResponse1 = styled.div`
 const DivResponse2 = styled.div`
   display: grid;
   grid-auto-flow: row;
-  grid-gap: 100px;
+  grid-gap: 50px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   justify-items: end;
+  font-size: 0.5rem;
 `
 
 export default Nav

@@ -124,12 +124,6 @@ export const Modifiers = {
   `,
 
   // Font
-  fRaleway: () => `
-    font-family: 'Raleway';
-  `,
-  fAbril: () => `
-    font-family: 'Abril Fatface';
-  `,
   tCenter: () => `
     text-align: center;
   `,
@@ -151,6 +145,9 @@ export const Modifiers = {
   ul: () => `
     text-decoration: underline;
   `,
+  ol: () => `
+    text-decoration: overline;
+  `,
   b: () => `
     font-weight: bold;
   `,
@@ -167,5 +164,14 @@ export const Modifiers = {
   `,
   borderBlack: () => `
     border: 5px double black;
+  `,
+  borderWhite: () => `
+    border: 5px double white;
+  `,
+  fCrimson: () => `
+    font-family: 'Crimson Text', serif;
+  `,
+  fMontserrat: () => `
+    font-family: 'Montserrat', sans-serif;
   `,
 }

@@ -40,9 +40,10 @@ const H1Response = styled.h1`
   margin: 0;
   color: white;
   text-decoration: underline;
+  font-family: 'Crimson Text', serif;
 `
 const PResponse = styled.p`
-  font-size: 3rem;
+  font-size: 1.5rem;
   margin: 0;
   color: white;
   font-style: italic;
