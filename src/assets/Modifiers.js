@@ -71,7 +71,10 @@ export const Modifiers = {
     margin: 0;
   `,
   m0A: () => `
-    margin: 0 auto;
+  margin: 0 auto;
+  `,
+  m1A: () => `
+    margin: 1rem auto;
   `,
   my3A: () => `
     margin: 3rem auto;
@@ -86,6 +89,9 @@ export const Modifiers = {
   // Window
   wA: () => `
     width: auto;
+  `,
+  w10: () => `
+    width: 10%;
   `,
   w25: () => `
     width: 25%;
@@ -121,6 +127,9 @@ export const Modifiers = {
   `,
   bBlack: () => `
     background: black;
+  `,
+  bGray: () => `
+    background: #333333;
   `,
 
   // Font
@@ -173,5 +182,17 @@ export const Modifiers = {
   `,
   fMontserrat: () => `
     font-family: 'Montserrat', sans-serif;
+  `,
+  fTangerine: () => `
+    font-family: 'Tangerine', cursive;
+  `,
+  rotate5L: () => `
+    transform: rotate(-5deg);
+  `,
+  boxUp: () => `
+    border: 1px solid black;
+  `,
+  fSize2: () => `
+    font-size: 2rem;
   `,
 }

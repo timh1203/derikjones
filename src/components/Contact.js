@@ -1,15 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, Form, Input, Textarea, H1, H3, Img } from '../assets/Matrix'
+import { Div, Form, Input, Textarea, H1, H3, P, Img } from '../assets/Matrix'
 
 const Contact = () => (
   <SectionResponse id='Contact'>
-    <Div>
-      <Img modifiers={['bRadius50', 'w25', 'borderWhite']} src='https://i.imgur.com/vxJq5Wl.jpg' />
-      <H1>I would love to connect with you.</H1>
-      <H1>Always open to new opportunities!</H1>
-    </Div>
+    <DivResponse>
+      <Img modifiers={['bRadius50', 'w25', 'borderWhite']} src='https://i.imgur.com/nFAGd8s.jpg' />
+      <P modifiers={['m0', 'fLarger']}>I would love to connect with you and</P>
+      <P modifiers={['m0', 'fLarger']}>always open to new opportunities!</P>
+      <br />
+      <P modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P>
+      <P modifiers={['m0']}>Architectural Designer</P>
+    </DivResponse>
     <Div id="emailForm"  modifiers={['tCenter']}>
         <FormResponse id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
           <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
@@ -26,7 +29,7 @@ const Contact = () => (
 
 const SectionResponse = styled.section`
   color: white;
-  height: 50vh;
+  height: 70vh;
   background: no-repeat center center url('https://i.imgur.com/sgzH36g.png');
   background-size: cover;
   text-align: center;
@@ -34,6 +37,11 @@ const SectionResponse = styled.section`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+`
+
+const DivResponse = styled.div`
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5% 30%;
 `
 
 const FormResponse = styled.form`

@@ -7,7 +7,7 @@ const Nav = () => (
   <DivResponse1 modifiers={['dGrid']}>
     <Div>
       <Link to='/'>
-        <Img modifiers={['w50']} src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
+        <ImgResponse src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
       </Link>
     </Div>
     <DivResponse2>
@@ -51,6 +51,10 @@ const DivResponse2 = styled.div`
   grid-template-columns: repeat(3, minmax(200px, 1fr));
   justify-items: end;
   font-size: 0.5rem;
+`
+
+const ImgResponse = styled.img`
+  width: 70%;
 `
 
 export default Nav

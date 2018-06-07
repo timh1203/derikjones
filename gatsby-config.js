@@ -10,6 +10,7 @@ module.exports = {
         fonts: [
           `Crimson Text`,
           `Montserrat`,
+          `Tangerine`,
         ]
       },
     },

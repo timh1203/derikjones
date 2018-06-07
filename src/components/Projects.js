@@ -5,7 +5,7 @@ import { Div, H1, P, Img } from '../assets/Matrix'
 
 const Projects = () => (
   <Div>
-    <P modifiers={['tCenter', 'ul']}>Projects</P>
+    <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'm1A', 'bGray', 'cWhite']}>Projects</P>
     <Div modifiers={['dFlex', 'fjcBetween', 'tCenter']}>
       <Div>
         <Link to='/project1'>

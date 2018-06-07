@@ -33,7 +33,7 @@ class Photos extends React.Component {
   render() {
     let {photos} = this.state
     return (
-      <Section id='Photos' modifiers={['my3A']}>
+      <Section id='Photos'>
         <H1 modifiers={['ol']}>Photos</H1>
         <Div modifiers={['dFlex', 'fjcAround', 'tCenter']}>
           { Object.keys(photos).map( key => 

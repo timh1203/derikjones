@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
 `
 
 export const Section = styled.section`
+  margin: 5rem 0;
   ${applyStyleModifiers(Modifiers)}
 `
 
@@ -105,5 +106,11 @@ export const P = styled.p`
 `
 
 export const Ul = styled.ul`
+  ${applyStyleModifiers(Modifiers)}
+`
+
+export const Hr = styled.hr`
+  width: 50%;
+  opacity: 0.3;
   ${applyStyleModifiers(Modifiers)}
 `

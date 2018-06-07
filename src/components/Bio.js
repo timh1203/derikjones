@@ -6,10 +6,12 @@ import FaInstagram from 'react-icons/lib/fa/instagram'
 import { Section, Div, Img, H1, P, A } from '../assets/Matrix'
 
 const Bio = () => (
-  <Section id='Bio' modifiers={['vh50']}>
+  <Section id='Bio'>
     <Div modifiers={['w50', 'm0A', 'tCenter']}>
-      <H1>Whatever good things we build end up building us.</H1>
-      <P>-Jim Rohn</P>
+      <DivResponse>
+        <H1>Whatever good things we build end up building us.</H1>
+        <P>-Jim Rohn</P>
+      </DivResponse>
       <Img modifiers={['bRadius50', 'w25', 'borderBlack']} src='https://i.imgur.com/vxJq5Wl.jpg' />
       <PResponse>
         I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
@@ -45,6 +47,12 @@ const Bio = () => (
     </Div>
   </Section>
 )
+
+const DivResponse = styled.div`
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px black;
+  margin: 3rem 0;
+`
 
 const PResponse = styled.p`
   font-family: 'Crimson Text', serif;
