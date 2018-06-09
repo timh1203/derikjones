@@ -11,55 +11,22 @@ const Footer = () => (
       <ImgResponse src="https://i.imgur.com/SIMExmd.png" alt="logo" />
     </DivResponse1>
     <DivResponse2>
-      <Link to="/#Portfolio"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.6rem'
-        }}>
-        <H1>PORTFOLIO</H1>
-      </Link>
-      <Link to="/#Photos"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.6rem'
-        }}
-      >
-        <H1>PHOTOS</H1>
-      </Link>
-      <Link to="/#Contact"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.6rem'
-        }}
-      >
-        <H1>CONTACT</H1>
-      </Link>
+      <Link1 to="/#Portfolio">
+        <H1>About</H1>
+      </Link1>
+      <Link1 to="/#Photos">
+        <H1>Portfolio</H1>
+      </Link1>
+      <Link1 to="/#Contact">
+        <H1>Contact</H1>
+      </Link1>
     </DivResponse2>
     <Div>
         <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
-          <FaLinkedinSquare 
-            style={{
-              color: '#0077B5',
-              border: '1px solid #0077B5',
-              borderRadius: '10%',
-              boxShadow: '0px 3px 10px rgba(0,0,0,.25)',
-              margin: '2rem',
-            }} 
-            size={50} 
-          />
+          <FaLinkedinSquare1 size={50} />
         </A>
         <A href='https://www.instagram.com/rad_jones_photography/'>
-          <FaInstagram 
-            style={{
-              color: 'white',
-              borderRadius: '10%',
-              background: '#d6249f',
-              background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
-              boxShadow: '0px 3px 10px rgba(0,0,0,.25)',
-              margin: '2rem',
-            }}
-            size={50}
-          />
+          <FaInstagram1 size={50} />
         </A>
       </Div>
     <PResponse>Copyright © 2018 Derik S. Jones</PResponse>
@@ -83,7 +50,7 @@ const DivResponse1 = styled.div`
 
 const DivResponse2 = styled.div`
   display: grid;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -99,12 +66,51 @@ const ImgResponse = styled.img`
   text-align: center;
 `
 
+const Link1 = styled(Link)`
+  color: white;
+  font-size: 0.6rem;
+  text-decoration: none;
+  border-top: 5px solid white;
+
+  &:hover {
+    text-decoration: none;
+    border-top: 5px solid black;
+    color: black;
+    text-shadow: 0 0 3px white;
+  }
+`
+
 const PResponse = styled.p`
   grid-column: 1 / span 3;
   text-align: center;
   margin: 0;
   padding: 0;
   align-self: end;
+`
+
+const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
+  color: #0077B5;
+  border: 1px solid #0077B5;
+  border-radius: 10%;
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  margin: 2rem;
+
+  &:hover {
+    box-shadow: 0 0 20px #82DBFA;
+  }
+`
+
+const FaInstagram1 = styled(FaInstagram)`
+  color: white;
+  border-radius: 10%;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+  margin: 2rem;
+
+  &:hover {
+    box-shadow: 0 0 20px #82DBFA;
+  }
 `
 
 export default Footer

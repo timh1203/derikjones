@@ -198,4 +198,7 @@ export const Modifiers = {
   pt3: () => `
     padding-top: 3rem;
   `,
+  bRadius5px: () => `
+    border-radius: 5px;
+  `,
 }

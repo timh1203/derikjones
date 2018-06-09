@@ -32,7 +32,7 @@ class Photos extends React.Component {
     let {photos} = this.state
     return (
       <Div modifier={['py1']}>
-        <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite']}>Photography</P>
+        <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite', 'bRadius5px']}>Photography</P>
         <Div modifiers={['dFlex', 'fjcAround', 'tCenter', 'pt3']}>
           { Object.keys(photos).map( key => 
             <Photo key={key} details={photos[key]} />) 

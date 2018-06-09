@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, Form, Input, Textarea, H1, H3, P, Img } from '../assets/Matrix'
+import { Div, Form, Input, Textarea, Button, H1, H3, P, Img } from '../assets/Matrix'
 
 const Contact = () => (
   <SectionResponse id='Contact'>
     <DivResponse>
-      <Img modifiers={['bRadius50', 'w25', 'borderWhite']} src='https://i.imgur.com/nFAGd8s.jpg' />
+      <Img1 src='https://i.imgur.com/nFAGd8s.jpg' />
       <P modifiers={['m0', 'fLarger']}>I would love to connect with you and</P>
       <P modifiers={['m0', 'fLarger']}>always open to new opportunities!</P>
       <br />
@@ -21,7 +21,7 @@ const Contact = () => (
           <Input id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
           <Input id="emailBox" type="email" name="Email" placeholder="Email" required />
           <Textarea id="messageBox" type="text" name="Message" placeholder="Message" required></Textarea>
-          <Input id="send" type="submit" value="Send" />
+          <Button id="send" type="submit" value="Send">Send</Button>
         </FormResponse>
     </Div>
   </SectionResponse>
@@ -48,6 +48,12 @@ const FormResponse = styled.form`
   display: grid;
   justify-content: center;
   grid-gap: 0.8rem;
+`
+
+const Img1 = styled.img`
+  width: 25%;
+  border-radius: 50%;
+  border: 5px double white;
 `
 
 export default Contact

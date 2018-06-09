@@ -14,7 +14,7 @@ const About = () => (
 
       <Div2>
         <Div3>
-          <Img modifiers={['bRadius50', 'w50', 'borderBlack']} src='https://i.imgur.com/vxJq5Wl.jpg' />
+          <Img1 src='https://i.imgur.com/vxJq5Wl.jpg' />
           <Div>
             <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
               <FaLinkedinSquare1 size={50} />
@@ -70,12 +70,22 @@ const P1 = styled.p`
   justify-self: start;
 `
 
+const Img1 = styled.img`
+  border-radius: 50%;
+  width: 50%;
+  border: 5px double black;
+`
+
 const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
   color: #0077B5;
   border: 1px solid #0077B5;
   border-radius: 10%;
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   margin: 2rem;
+
+  &:hover {
+    box-shadow: 0 0 20px #82DBFA;
+  }
 `
 
 const FaInstagram1 = styled(FaInstagram)`
@@ -85,6 +95,10 @@ const FaInstagram1 = styled(FaInstagram)`
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   margin: 2rem;
+
+  &:hover {
+    box-shadow: 0 0 20px #82DBFA;
+  }
 `
 
 export default About

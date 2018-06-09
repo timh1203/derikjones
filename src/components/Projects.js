@@ -5,7 +5,7 @@ import { Div, H1, P, Img } from '../assets/Matrix'
 
 const Projects = () => (
   <Div modifier={['py1']}>
-    <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite']}>Projects</P>
+    <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite', 'bRadius5px']}>Projects</P>
     <Div modifiers={['dFlex', 'fjcBetween', 'tCenter']}>
       <Div modifiers={['pt3']}>
         <Link to='/project1'>
@@ -35,6 +35,7 @@ const Projects = () => (
 const Img1 = styled(Img)`
   &:hover {
     filter: brightness(80%);
+    box-shadow: 0 0 10px #82DBFA;
   }
 `
 
