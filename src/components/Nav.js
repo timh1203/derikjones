@@ -1,60 +1,64 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, H1, Img } from '../assets/Matrix'
 
 const Nav = () => (
-  <DivResponse1>
+  <Div1>
     <Link to='/'>
-      <ImgResponse src="https://i.imgur.com/SIMExmd.png" alt="logo" />
+      <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
     </Link>
 
-    <DivResponse2>
-      <Link to="/#Portfolio"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.8rem',
-          textDecoration: 'overline',
-        }}>
-        <H1>PORTFOLIO</H1>
-      </Link>
-      <Link to="/#Photos"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.8rem',
-          textDecoration: 'overline',
-        }}
-      >
-        <H1>PHOTOS</H1>
-      </Link>
-      <Link to="/#Contact"
-        activeStyle={{
-          color: 'white',
-          fontSize: '0.8rem',
-          textDecoration: 'overline',
-        }}
-      >
-        <H1>CONTACT</H1>
-      </Link>
-    </DivResponse2>
-  </DivResponse1>
+    <Div2>
+      <Link1 to="/#Portfolio">
+        <H11>Portfolio</H11>
+      </Link1>
+      <Link1 to="/#Photos">
+        <H11>Photos</H11>
+      </Link1>
+      <Link1 to="/#Contact">
+        <H11>Contact</H11>
+      </Link1>
+    </Div2>
+  </Div1>
 )
 
-const DivResponse1 = styled.div`
+const Div1 = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   width: 100%;
 `
 
-const DivResponse2 = styled.div`
+const Div2 = styled.div`
   display: grid;
-  padding: 0 1rem;
+  justify-items: end;
+  padding-right: 1rem;
+  margin: 1rem 0;
 `
 
-const ImgResponse = styled.img`
+const Img1 = styled.img`
   width: 20%;
   margin: 1rem;
+`
+
+const Link1 = styled(Link)`
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-right: 5px solid white;
+  padding: 0.2rem;
+  
+  &:hover {
+    text-decoration: none;
+    border-right: 5px solid black;
+    color: black;
+    text-shadow: 0 0 3px white;
+  }
+`
+
+const H11 = styled.h1`
+  font-family: 'Crimson Text', serif;
+  margin: 0;
 `
 
 export default Nav

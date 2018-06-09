@@ -2,29 +2,24 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Nav from '../components/Nav'
-import { Div, H1, P } from '../assets/Matrix'
+import { Div } from '../assets/Matrix'
 
 const Header = () => (
-  <SectionResponse>
+  <Section1>
     <Nav />
-    <DivResponse>
-      <H1Response>Design</H1Response>
-      <PResponse>Shaping Architecture</PResponse>
-    </DivResponse>
+    <Div1>
+      <H11>Design</H11>
+      <P1>Shaping Architecture</P1>
+    </Div1>
     <Div>
-      <Link to="/#Bio"  
-        activeStyle={{
-          textDecoration: 'none',
-          color: 'white'
-        }}
-      >
-        <H1>↓</H1>
-      </Link>
+      <Link1 to="/#Bio">
+        <H12>↓</H12>
+      </Link1>
     </Div>
-  </SectionResponse>
+  </Section1>
 )
 
-const SectionResponse = styled.div`
+const Section1 = styled.div`
   display: grid;
   align-content: space-between;
   justify-items: center;
@@ -35,13 +30,13 @@ const SectionResponse = styled.div`
   height: 100vh;
 `
 
-const DivResponse = styled.div`
+const Div1 = styled.div`
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 `
 
-const H1Response = styled.h1`
+const H11 = styled.h1`
   font-size: 10rem;
   margin: 0;
   color: white;
@@ -49,11 +44,24 @@ const H1Response = styled.h1`
   font-family: 'Crimson Text', serif;
   text-shadow: 0 0 20px black;
 `
-const PResponse = styled.p`
+
+const H12 = styled.h1`
+  &:hover {
+    text-shadow: 0 0 5px white;
+    color: black;
+  }
+`
+
+const P1 = styled.p`
   font-size: 1.5rem;
   margin: 0;
   color: white;
   font-style: italic;
+`
+
+const Link1 = styled(Link)`
+  text-decoration: none;
+  color: white;
 `
 
 export default Header
