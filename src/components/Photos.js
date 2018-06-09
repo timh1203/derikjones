@@ -3,7 +3,7 @@ import { instagram } from '../helpers/ig'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Photo from './Photo'
-import { Section, Div, H1 } from '../assets/Matrix'
+import { Section, Div, P, Hr } from '../assets/Matrix'
 
 class Photos extends React.Component {
   constructor() {
@@ -33,9 +33,10 @@ class Photos extends React.Component {
   render() {
     let {photos} = this.state
     return (
-      <Section id='Photos'>
-        <H1 modifiers={['ol']}>Photos</H1>
-        <Div modifiers={['dFlex', 'fjcAround', 'tCenter']}>
+      <Section id='Photos' modifier={['py1']}>
+        <Hr />
+        <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite']}>Photography</P>
+        <Div modifiers={['dFlex', 'fjcAround', 'tCenter', 'py3']}>
           { Object.keys(photos).map( key => 
             <Photo key={key} details={photos[key]} />) 
           }

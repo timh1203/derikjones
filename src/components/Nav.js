@@ -4,23 +4,21 @@ import styled from 'styled-components'
 import { Div, H1, Img } from '../assets/Matrix'
 
 const Nav = () => (
-  <DivResponse1 modifiers={['dGrid']}>
-    <Div>
-      <Link to='/'>
-        <ImgResponse src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
-      </Link>
-    </Div>
+  <DivResponse1>
+    <Link to='/'>
+      <ImgResponse src="https://i.imgur.com/SIMExmd.png" alt="logo" />
+    </Link>
     <DivResponse2>
       <Link to="/#Portfolio"
         activeStyle={{
-          color: '#212121',
+          color: 'white',
           fontSize: '0.6rem'
         }}>
         <H1>PORTFOLIO</H1>
       </Link>
       <Link to="/#Photos"
         activeStyle={{
-          color: '#212121',
+          color: 'white',
           fontSize: '0.6rem'
         }}
       >
@@ -28,7 +26,7 @@ const Nav = () => (
       </Link>
       <Link to="/#Contact"
         activeStyle={{
-          color: '#212121',
+          color: 'white',
           fontSize: '0.6rem'
         }}
       >
@@ -40,17 +38,16 @@ const Nav = () => (
 
 const DivResponse1 = styled.div`
   display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr auto;
 `
 
 const DivResponse2 = styled.div`
   display: grid;
-  grid-auto-flow: row;
-  grid-gap: 50px;
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-gap: 50px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-  justify-items: end;
-  font-size: 0.5rem;
+  justify-items: center;
+  font-size: 0.5rem; */
 `
 
 const ImgResponse = styled.img`

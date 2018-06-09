@@ -5,7 +5,7 @@ import Bio from '../components/Bio'
 import Portfolio from '../components/Portfolio'
 import Photos from '../components/Photos'
 import Contact from '../components/Contact'
-import { Wrapper, H1 } from '../assets/Matrix'
+import { Wrapper } from '../assets/Matrix'
 
 const IndexPage = () => (
   <Wrapper modifiers={['p0']}>

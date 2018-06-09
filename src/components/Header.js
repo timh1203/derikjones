@@ -7,10 +7,10 @@ import { Div, H1, P } from '../assets/Matrix'
 const Header = () => (
   <SectionResponse>
     <Nav />
-    <Div modifiers={['tCenter']}>
+    <DivResponse>
       <H1Response>Design</H1Response>
       <PResponse>Shaping Architecture</PResponse>
-    </Div>
+    </DivResponse>
     <Div>
       <Link to="/#Bio"  
         activeStyle={{
@@ -18,7 +18,7 @@ const Header = () => (
           color: 'white'
         }}
       >
-        <H1>⬇</H1>
+        <H1>↓</H1>
       </Link>
     </Div>
   </SectionResponse>
@@ -28,11 +28,17 @@ const SectionResponse = styled.div`
   display: grid;
   align-content: space-between;
   justify-items: center;
-  background-image: url('https://i.imgur.com/Pcwo5Rv.jpg');
+  background-image: url('https://i.imgur.com/9EeJyDc.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+`
+
+const DivResponse = styled.div`
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 `
 
 const H1Response = styled.h1`
@@ -41,6 +47,7 @@ const H1Response = styled.h1`
   color: white;
   text-decoration: underline;
   font-family: 'Crimson Text', serif;
+  text-shadow: 0 0 20px black;
 `
 const PResponse = styled.p`
   font-size: 1.5rem;
