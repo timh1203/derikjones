@@ -32,8 +32,7 @@ const Section1 = styled.div`
 
 const Div1 = styled.div`
   text-align: center;
-  /* background: rgba(0, 0, 0, 0.3); */
-  background: rgba(130,219,250, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 `
 
@@ -44,6 +43,10 @@ const H11 = styled.h1`
   text-decoration: underline;
   font-family: 'Crimson Text', serif;
   text-shadow: 0 0 20px black;
+
+  @media (max-width: 768px) {
+    font-size: 5rem;
+  }
 `
 
 const H12 = styled.h1`
@@ -58,6 +61,10 @@ const P1 = styled.p`
   margin: 0;
   color: white;
   font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 const Link1 = styled(Link)`

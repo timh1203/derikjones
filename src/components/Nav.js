@@ -2,136 +2,66 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-class Nav extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      menuActive: false,
-    }
-  }
+const Nav = () => (
+  <Div1>
+    <Div2>
+      <Link to='/'>
+        <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
+      </Link>
+    </Div2>
 
-  handleClick = (e) => {
-    e.preventDefault()
-    const { menuActive } = this.state
-    this.setState({ menuActive: !menuActive })
-  }
-
-  render() {
-    return (
-      <Div1>
-        <Link to='/'>
-          <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
-        </Link>
-
-        { this.state.menuActive ? (
-          <Div2>
-            <ButtonClose active={this.state.menuActive} onClick={(e) => this.handleClick(e)}>
-              <Span2 active={this.state.menuActive}>X Menu</Span2>
-            </ButtonClose>
-            <Nav1 active={this.state.menuActive}>
-              <Div3>
-                <Link1 to="/#About">
-                  <H11>About</H11>
-                </Link1>
-                <Link1 to="/#Portfolio">
-                  <H11>Portfolio</H11>
-                </Link1>
-                <Link1 to="/#Contact">
-                  <H11>Contact</H11>
-                </Link1>
-              </Div3>
-            </Nav1>
-          </Div2>
-          )
-          :
-          (
-          <Div2>
-            <ButtonOpen active={this.state.menuActive} onClick={(e) => this.handleClick(e)}>
-              <Span1 active={this.state.menuActive}>☰ Menu</Span1>
-            </ButtonOpen>
-          </Div2>
-          )
-        }
-    
-        {/* <Div2>
-          <Link1 to="/#About">
-            <H11>About</H11>
-          </Link1>
-          <Link1 to="/#Portfolio">
-            <H11>Portfolio</H11>
-          </Link1>
-          <Link1 to="/#Contact">
-            <H11>Contact</H11>
-          </Link1>
-        </Div2> */}
-      </Div1>
-    )
-  }
-}
+    <Div3>
+      <Link1 to="/#About">
+        <H11>About</H11>
+      </Link1>
+      <Link1 to="/#Portfolio">
+        <H11>Portfolio</H11>
+      </Link1>
+      <Link1 to="/#Contact">
+        <H11>Contact</H11>
+      </Link1>
+    </Div3>
+  </Div1>
+)
 
 const Div1 = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   width: 100%;
+
+  @media (max-width: 768px) {
+    grid-auto-flow: rows;
+    justify-items: center;
+    grid-template-areas:
+      "logo"
+      "nav"
+  }
 `
 
 const Div2 = styled.div`
-  display: grid;
+  grid-area: 'logo';
+
+  @media (max-width: 768px) {
+    text-align: center;  
+  }
 `
 
 const Div3 = styled.div`
+  grid-area: 'nav';
   display: grid;
   justify-items: end;
   padding-right: 1rem;
   margin: 1rem 0;
 `
 
-const Nav1 = styled.nav``
-
-const ButtonOpen = styled.button`
-  max-height: 30%;
-  border-radius: 5px;
-  font-family: 'Crimson Text', serif;
-  font-size: 1rem;
-  padding: 0.5rem;
-  transition: all ease 0.2s;
-
-  &:hover{
-    color: white;
-    background: #333333;
-    border-radius: 10px;
-    border: 1px solid #82BDFA;
-    box-shadow: 0 0 5px #82DBFA;
-  }
-`
-
-const ButtonClose = styled.button`
-  border-radius: 5px;
-  font-family: 'Crimson Text', serif;
-  justify-self: end;
-  font-size: 1rem;
-  padding: 0.5rem;
-  transition: all ease 0.2s;
-
-  &:hover{
-    color: white;
-    background: #333333;
-    border-radius: 10px;
-    border: 1px solid #82BDFA;
-    box-shadow: 0 0 5px #82DBFA;
-  }
-`
-
-const Span1 = styled.span`
-`
-
-const Span2 = styled.span`
-`
-
 const Img1 = styled.img`
-  width: 20%;
+  width: 30%;
   margin: 1rem;
+
+  @media (max-width: 768px) {
+    width: 75%;
+  }
 `
 
 const Link1 = styled(Link)`
@@ -147,6 +77,18 @@ const Link1 = styled(Link)`
     color: black;
     text-shadow: 0 0 3px white;
   }
+
+  /* @media (max-width: 768px) {
+    border-right: 5px solid black;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      border-right: 5px solid white;
+      color: white;
+      text-shadow: 0 5px 20px black;
+    }
+  } */
 `
 
 const H11 = styled.h1`

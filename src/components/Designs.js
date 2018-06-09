@@ -11,22 +11,22 @@ const Designs = () => (
         <Link to='/model1'>
             <Img1 modifiers={['w75']} src='https://i.imgur.com/7USkFg2.png' alt='model 1' />
         </Link>
-        <H1>Downtown Brambleton</H1>
-        <P>Multi-Family</P>
+        <H1>Teagarden</H1>
+        <P>Illustrator Design & Photoshop</P>
       </Div>
       <Div modifiers={['pt3']}>
         <Link to='/model2'>
           <Img1 modifiers={['w75']} src='https://i.imgur.com/yGY60ZS.png' alt='model 2' />
         </Link>
-        <H1>Model 2 Title</H1>
-        <P>Model 3 Description</P>
+        <H1>Grand Villas-Hudson</H1>
+        <P>Shetckup Design</P>
       </Div>
       <Div modifiers={['pt3']}>
         <Link to='/model3'>
           <Img1 modifiers={['w75']} src='https://i.imgur.com/idFt6go.png' alt='model 3' />
         </Link>
-        <H1>Model 3 Title</H1>
-        <P>Model 3 Description</P>
+        <H1>Middleway</H1>
+        <P>Illustrator Design & Photoshop</P>
       </Div>
     </Div>
   </Div>
