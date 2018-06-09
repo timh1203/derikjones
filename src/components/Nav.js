@@ -8,18 +8,21 @@ const Nav = () => (
     <Link to='/'>
       <ImgResponse src="https://i.imgur.com/SIMExmd.png" alt="logo" />
     </Link>
+
     <DivResponse2>
       <Link to="/#Portfolio"
         activeStyle={{
           color: 'white',
-          fontSize: '0.6rem'
+          fontSize: '0.8rem',
+          textDecoration: 'overline',
         }}>
         <H1>PORTFOLIO</H1>
       </Link>
       <Link to="/#Photos"
         activeStyle={{
           color: 'white',
-          fontSize: '0.6rem'
+          fontSize: '0.8rem',
+          textDecoration: 'overline',
         }}
       >
         <H1>PHOTOS</H1>
@@ -27,7 +30,8 @@ const Nav = () => (
       <Link to="/#Contact"
         activeStyle={{
           color: 'white',
-          fontSize: '0.6rem'
+          fontSize: '0.8rem',
+          textDecoration: 'overline',
         }}
       >
         <H1>CONTACT</H1>
@@ -38,20 +42,19 @@ const Nav = () => (
 
 const DivResponse1 = styled.div`
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  width: 100%;
 `
 
 const DivResponse2 = styled.div`
   display: grid;
-  /* grid-template-columns: 1fr 1fr; */
-  /* grid-gap: 50px;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
-  justify-items: center;
-  font-size: 0.5rem; */
+  padding: 0 1rem;
 `
 
 const ImgResponse = styled.img`
-  width: 70%;
+  width: 20%;
+  margin: 1rem;
 `
 
 export default Nav

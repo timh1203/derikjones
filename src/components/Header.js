@@ -28,7 +28,7 @@ const SectionResponse = styled.div`
   display: grid;
   align-content: space-between;
   justify-items: center;
-  background-image: url('https://i.imgur.com/9EeJyDc.png');
+  background-image: url('https://i.imgur.com/Pcwo5Rv.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
