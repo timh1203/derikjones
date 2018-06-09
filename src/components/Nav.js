@@ -9,11 +9,11 @@ const Nav = () => (
     </Link>
 
     <Div2>
+      <Link1 to="/#About">
+        <H11>About</H11>
+      </Link1>
       <Link1 to="/#Portfolio">
         <H11>Portfolio</H11>
-      </Link1>
-      <Link1 to="/#Photos">
-        <H11>Photos</H11>
       </Link1>
       <Link1 to="/#Contact">
         <H11>Contact</H11>

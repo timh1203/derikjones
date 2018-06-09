@@ -1,9 +1,7 @@
 import React from 'react'
 import { instagram } from '../helpers/ig'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
 import Photo from './Photo'
-import { Section, Div, P, Hr } from '../assets/Matrix'
+import { Div, P } from '../assets/Matrix'
 
 class Photos extends React.Component {
   constructor() {
@@ -33,15 +31,14 @@ class Photos extends React.Component {
   render() {
     let {photos} = this.state
     return (
-      <Section id='Photos' modifier={['py1']}>
-        <Hr />
+      <Div modifier={['py1']}>
         <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite']}>Photography</P>
-        <Div modifiers={['dFlex', 'fjcAround', 'tCenter', 'py3']}>
+        <Div modifiers={['dFlex', 'fjcAround', 'tCenter', 'pt3']}>
           { Object.keys(photos).map( key => 
             <Photo key={key} details={photos[key]} />) 
           }
         </Div>
-      </Section>
+      </Div>
     )
   }
 }

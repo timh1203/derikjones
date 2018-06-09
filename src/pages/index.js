@@ -1,18 +1,15 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import Header from '../components/Header'
-import Bio from '../components/Bio'
+import About from '../components/About'
 import Portfolio from '../components/Portfolio'
-import Photos from '../components/Photos'
 import Contact from '../components/Contact'
 import { Wrapper } from '../assets/Matrix'
 
 const IndexPage = () => (
   <Wrapper modifiers={['p0']}>
     <Header />
-    <Bio />
+    <About />
     <Portfolio />
-    <Photos />
     <Contact />
   </Wrapper>
 )

@@ -4,8 +4,8 @@ import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaInstagram from 'react-icons/lib/fa/instagram'
 import { Div, Img, H1, P, A } from '../assets/Matrix'
 
-const Bio = () => (
-  <Section1 id='Bio'>
+const About = () => (
+  <Section1 id='About'>
     <Div>
       <Div1>
         <H1>Whatever good things we build end up building us.</H1>
@@ -87,4 +87,4 @@ const FaInstagram1 = styled(FaInstagram)`
   margin: 2rem;
 `
 
-export default Bio
+export default About

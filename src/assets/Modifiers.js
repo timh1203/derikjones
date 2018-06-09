@@ -195,4 +195,7 @@ export const Modifiers = {
   fSize2: () => `
     font-size: 2rem;
   `,
+  pt3: () => `
+    padding-top: 3rem;
+  `,
 }

@@ -110,8 +110,8 @@ export const Ul = styled.ul`
 `
 
 export const Hr = styled.hr`
-  width: 70%;
+  width: 80%;
   opacity: 0.3;
-  margin: 1rem auto;
+  margin: 2rem auto;
   ${applyStyleModifiers(Modifiers)}
 `
