@@ -12,7 +12,7 @@ const Header = () => (
       <P1>Shaping Architecture</P1>
     </Div1>
     <Div>
-      <Link1 to="/#Bio">
+      <Link1 to="/#About">
         <H12>↓</H12>
       </Link1>
     </Div>

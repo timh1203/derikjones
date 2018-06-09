@@ -71,6 +71,10 @@ export const Iframe = styled.iframe`
 export const Img = styled.img`
   border-radius: 5px;
   box-shadow: 5px 5px 5px #cccccc;
+
+  &:hover {
+    filter: brightness(80%);
+  }
   ${applyStyleModifiers(Modifiers)}
 `
 
