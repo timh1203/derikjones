@@ -32,7 +32,8 @@ const Section1 = styled.div`
 
 const Div1 = styled.div`
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(130,219,250, 0.5);
   border-radius: 50%;
 `
 

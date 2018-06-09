@@ -21,6 +21,10 @@ export const Div = styled.div`
   ${applyStyleModifiers(Modifiers)}
 `
 
+export const Nav = styled.nav`
+  ${applyStyleModifiers(Modifiers)}
+`
+
 export const A = styled.a`
   ${applyStyleModifiers(Modifiers)}
 `
