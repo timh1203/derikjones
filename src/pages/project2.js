@@ -1,13 +1,12 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Nav from '../components/Nav'
+import Nav2 from '../components/Nav2'
 import { Wrapper, H1, Img, A } from '../assets/Matrix'
 
 const Project2 = () => (
-  <Wrapper>
-    <Nav />
-    <H1>Project2</H1>
+  <Wrapper1>
+    <Nav2 />
+    <H1>Brambleton Virginia</H1>
     <A href='https://i.imgur.com/yAUDSX7.png'>
       <Img modifiers={['w100']} src='https://i.imgur.com/yAUDSX7.png' alt='Picture 2a' />
     </A>
@@ -23,7 +22,16 @@ const Project2 = () => (
     <A href='https://i.imgur.com/Ip4YWK5.png'>
       <Img modifiers={['w100']} src='https://i.imgur.com/Ip4YWK5.png' alt='Picture 2e' />
     </A>
-  </Wrapper>
+  </Wrapper1>
 )
+
+const Wrapper1 = styled(Wrapper)`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+`
 
 export default Project2

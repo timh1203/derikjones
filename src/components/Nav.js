@@ -77,18 +77,6 @@ const Link1 = styled(Link)`
     color: black;
     text-shadow: 0 0 3px white;
   }
-
-  /* @media (max-width: 768px) {
-    border-right: 5px solid black;
-    color: black;
-
-    &:hover {
-      text-decoration: none;
-      border-right: 5px solid white;
-      color: white;
-      text-shadow: 0 5px 20px black;
-    }
-  } */
 `
 
 const H11 = styled.h1`

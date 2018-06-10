@@ -29,7 +29,7 @@ const Div1 = styled.div`
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   width: 100%;
-  color: black;
+  align-content: space-between;
 
   @media (max-width: 768px) {
     grid-auto-flow: rows;
@@ -42,24 +42,32 @@ const Div1 = styled.div`
 
 const Div2 = styled.div`
   grid-area: 'logo';
+  justify-self: start;
+
+  @media (max-width: 768px) {
+    justify-self: center;
+  }
 `
 
 const Div3 = styled.div`
   grid-area: 'nav';
   display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  color: white;
+  justify-items: end;
+  padding-right: 1rem;
+  margin: 1rem 0;
 
   @media (max-width: 768px) {
-    width: 70%;
-    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding-right: 0;
+    margin: 0;
   }
 `
 
 const Img1 = styled.img`
-  width: 30%;
+  width: 60%;
   margin: 1rem;
 
   @media (max-width: 768px) {
@@ -71,14 +79,26 @@ const Link1 = styled(Link)`
   color: black;
   font-size: 0.8rem;
   text-decoration: none;
-  border-top: 5px solid Black;
+  border-right: 5px solid black;
   padding: 0.2rem;
   
   &:hover {
     text-decoration: none;
-    border-top: 5px solid black;
+    border-right: 5px solid #82DBFA;
     color: black;
-    text-shadow: 0 0 3px white;
+    text-shadow: 0 0 2px #82DBFA;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    border-top: 5px solid black;
+    border-right: none;
+
+    &:hover {
+      border-top: 5px solid #82DBFA;
+      border-right: none;
+      text-shadow: 0 0 2px #82DBFA;
+    }
   }
 `
 
