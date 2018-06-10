@@ -81,24 +81,26 @@ export const Img = styled.img`
 
 export const Input = styled.input`
   font-size: 1rem;
-  width: 30rem;
+  width: 300px;
   padding: 0.5rem;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
+  justify-self: center;
   ${applyStyleModifiers(Modifiers)}
 `
 
 export const Textarea = styled.textarea`
   font-size: 1rem;
-  width: 30rem;
+  width: 300px;
   padding: 0.5rem;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
+  justify-self: center;
   ${applyStyleModifiers(Modifiers)}
 `
 
 export const Button = styled.button`
-  width: 25%;
+  width: 50%;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
   font-size: 1rem;

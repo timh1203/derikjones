@@ -57,6 +57,10 @@ const Div2 = styled.div`
   text-align: center;
   padding: 0.1rem 0;
   border-radius: 15px;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 const Div3 = styled.div`

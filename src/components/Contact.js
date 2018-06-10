@@ -28,7 +28,8 @@ const Contact = () => (
 
 const Section1 = styled.section`
   color: white;
-  height: 70vh;
+  height: 90%;
+  padding: 3rem 0;
   background: no-repeat center center url('https://i.imgur.com/sgzH36g.png');
   background-size: cover;
   text-align: center;
@@ -39,13 +40,16 @@ const Section1 = styled.section`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    align-content: center;
   }
 `
 
 const Div1 = styled.div`
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px 150px;
+  padding: 1rem;
 `
 
 const Form1 = styled.form`

@@ -7,7 +7,7 @@ const Photo = (props) => (
       <Img modifiers={['w75', 'h75']} src={props.details.images.standard_resolution.url} alt={props.details.caption.from.text} />
     </A>
     <P>
-      <Span className="icons">💬</Span> {props.details.comments.count} | <Span className="icons">❤️</Span> {props.details.likes.count}
+      {props.details.comments.count} <Span className="icons">💬</Span>| <Span className="icons">❤️</Span>{props.details.likes.count}
     </P>
     <P modifiers={['w75', 'm0A']}>
       {props.details.caption.text.substring(0, 100) + '...'}
