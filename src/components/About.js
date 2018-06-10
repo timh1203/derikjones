@@ -88,6 +88,7 @@ const P1 = styled.p`
   font-size: 1.5rem;
   text-align: left;
   width: 90%;
+  padding-left: 1rem;
   justify-self: start;
 
   @media (max-width: 768px) {

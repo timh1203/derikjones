@@ -13,15 +13,15 @@ const Contact = () => (
       <P modifiers={['m0']}>Architectural Designer</P>
     </Div1>
     <Div id="emailForm"  modifiers={['tCenter']}>
-        <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
-          <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
-          <Input className="hidden" type="hidden" name="_gotcha" />
-          <Input id="firstName" type="text" name="First Name" placeholder="First Name" required />                    
-          <Input id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
-          <Input id="emailBox" type="email" name="Email" placeholder="Email" required />
-          <Textarea id="messageBox" type="text" name="Message" placeholder="Message" required></Textarea>
-          <Button id="send" type="submit" value="Send">Send</Button>
-        </Form1>
+      <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
+        <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
+        <Input className="hidden" type="hidden" name="_gotcha" />
+        <Input id="firstName" type="text" name="First Name" placeholder="First Name" required />                    
+        <Input id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
+        <Input id="emailBox" type="email" name="Email" placeholder="Email" required />
+        <Textarea id="messageBox" type="text" name="Message" placeholder="Message" required></Textarea>
+        <Button id="send" type="submit" value="Send">Send</Button>
+      </Form1>
     </Div>
   </Section1>
 )
@@ -39,6 +39,7 @@ const Section1 = styled.section`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    height: 100vh;
   }
 `
 
@@ -51,6 +52,10 @@ const Form1 = styled.form`
   display: grid;
   justify-content: center;
   grid-gap: 0.8rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 const Img1 = styled.img`

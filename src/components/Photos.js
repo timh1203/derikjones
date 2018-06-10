@@ -35,6 +35,7 @@ class Photos extends React.Component {
       display: grid;
       text-align: center;
       justify-content: center;
+      grid-template-columns: repeat(3, 1fr);
 
       @media (max-width: 768px) {
         grid-template-columns: 1fr;

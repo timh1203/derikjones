@@ -86,7 +86,7 @@ const Link1 = styled(Link)`
     text-decoration: none;
     border-right: 5px solid #82DBFA;
     color: black;
-    text-shadow: 0 0 2px #82DBFA;
+    /* text-shadow: 0 0 2px #82DBFA; */
   }
 
   @media (max-width: 768px) {
@@ -97,7 +97,7 @@ const Link1 = styled(Link)`
     &:hover {
       border-top: 5px solid #82DBFA;
       border-right: none;
-      text-shadow: 0 0 2px #82DBFA;
+      /* text-shadow: 0 0 2px #82DBFA; */
     }
   }
 `
