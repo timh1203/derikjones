@@ -6,14 +6,14 @@ import { Div, Img, H1, P, A } from '../assets/Matrix'
 
 const About = () => (
   <Section1 id='About'>
-    <Div>
-      <Div1>
+    <Div1>
+      <Div2>
         <H1>Whatever good things we build end up building us.</H1>
         <P>-Jim Rohn</P>
-      </Div1>
+      </Div2>
 
-      <Div2>
-        <Div3>
+      <Div3>
+        <Div4>
           <Img1 src='https://i.imgur.com/vxJq5Wl.jpg' />
           <Div>
             <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
@@ -23,12 +23,12 @@ const About = () => (
               <FaInstagram1 size={50} />
             </A>
           </Div>
-        </Div3>
+        </Div4>
         <P1>
           I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
         </P1>
-      </Div2>
-    </Div>
+      </Div3>
+    </Div1>
   </Section1>
 )
 
@@ -37,6 +37,17 @@ const Section1 = styled.section`
 `
 
 const Div1 = styled.div`
+  @media (max-width: 768px) {
+    grid-auto-flow: rows;
+    justify-items: center;
+    grid-template-areas:
+      'quote'
+      'bio'
+  }
+`
+
+const Div2 = styled.div`
+  grid-area: 'quote';
   color: white;
   background: #333333;
   box-shadow: 0 3px 3px black;
@@ -48,18 +59,28 @@ const Div1 = styled.div`
   border-radius: 15px;
 `
 
-const Div2 = styled.div`
+const Div3 = styled.div`
+  grid-area: 'bio';
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   margin: 3rem auto;
   text-align: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-auto-flow: rows;
+  }
 `
 
-const Div3 = styled.div`
+const Div4 = styled.div`
   width: 500px;
   border-right: 5px solid rgba(0, 0, 0, 0.2);
+  
+  @media (max-width: 768px) {
+    border: none;
+  }
 `
 
 const P1 = styled.p`
@@ -68,6 +89,11 @@ const P1 = styled.p`
   text-align: left;
   width: 90%;
   justify-self: start;
+
+  @media (max-width: 768px) {
+    justify-self: center;
+    text-align: center;
+  }
 `
 
 const Img1 = styled.img`
