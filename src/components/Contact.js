@@ -1,20 +1,19 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, Form, Input, Textarea, Button, H1, H3, P, Img } from '../assets/Matrix'
+import { Div, Input, Textarea, Button, P } from '../assets/Matrix'
 
 const Contact = () => (
-  <SectionResponse id='Contact'>
-    <DivResponse>
+  <Section1 id='Contact'>
+    <Div1>
       <Img1 src='https://i.imgur.com/nFAGd8s.jpg' />
       <P modifiers={['m0', 'fLarger']}>I would love to connect with you and</P>
       <P modifiers={['m0', 'fLarger']}>always open to new opportunities!</P>
       <br />
       <P modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P>
       <P modifiers={['m0']}>Architectural Designer</P>
-    </DivResponse>
+    </Div1>
     <Div id="emailForm"  modifiers={['tCenter']}>
-        <FormResponse id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
+        <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST" method="POST">
           <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
           <Input className="hidden" type="hidden" name="_gotcha" />
           <Input id="firstName" type="text" name="First Name" placeholder="First Name" required />                    
@@ -22,12 +21,12 @@ const Contact = () => (
           <Input id="emailBox" type="email" name="Email" placeholder="Email" required />
           <Textarea id="messageBox" type="text" name="Message" placeholder="Message" required></Textarea>
           <Button id="send" type="submit" value="Send">Send</Button>
-        </FormResponse>
+        </Form1>
     </Div>
-  </SectionResponse>
+  </Section1>
 )
 
-const SectionResponse = styled.section`
+const Section1 = styled.section`
   color: white;
   height: 70vh;
   background: no-repeat center center url('https://i.imgur.com/sgzH36g.png');
@@ -37,14 +36,18 @@ const SectionResponse = styled.section`
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
-const DivResponse = styled.div`
+const Div1 = styled.div`
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 5% 30%;
+  border-radius: 10px 150px;
 `
 
-const FormResponse = styled.form`
+const Form1 = styled.form`
   display: grid;
   justify-content: center;
   grid-gap: 0.8rem;
