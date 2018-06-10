@@ -6,11 +6,12 @@ import FaInstagram from 'react-icons/lib/fa/instagram'
 import { Section, Div, H1, A, P } from '../assets/Matrix'
 
 const Footer = () => (
-  <SectionResponse>
-    <DivResponse1>
-      <ImgResponse src="https://i.imgur.com/SIMExmd.png" alt="logo" />
-    </DivResponse1>
-    <DivResponse2>
+  <Section1>
+    <Div1>
+      <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
+    </Div1>
+
+    <Div2>
       <Link1 to="/#Portfolio">
         <H1>About</H1>
       </Link1>
@@ -20,20 +21,24 @@ const Footer = () => (
       <Link1 to="/#Contact">
         <H1>Contact</H1>
       </Link1>
-    </DivResponse2>
-    <Div>
-        <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
-          <FaLinkedinSquare1 size={50} />
-        </A>
-        <A href='https://www.instagram.com/rad_jones_photography/'>
-          <FaInstagram1 size={50} />
-        </A>
-      </Div>
-    <PResponse>Copyright © 2018 Derik S. Jones</PResponse>
-  </SectionResponse>
+    </Div2>
+
+    <Div3>
+      <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
+        <FaLinkedinSquare1 size={50} />
+      </A>
+      <A href='https://www.instagram.com/rad_jones_photography/'>
+        <FaInstagram1 size={50} />
+      </A>
+    </Div3>
+
+    <Div4>
+      <P1>Copyright © 2018 Derik S. Jones</P1>
+    </Div4>
+  </Section1>
 )
 
-const SectionResponse = styled.div`
+const Section1 = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr auto;
@@ -43,21 +48,44 @@ const SectionResponse = styled.div`
   color: white;
   background: #333333;
   text-align: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'logo'
+      'nav'
+      'social'
+      'copyright'
+  }
 `
 
-const DivResponse1 = styled.div`
+const Div1 = styled.div`
+  grid-area: 'logo';
 `
 
-const DivResponse2 = styled.div`
+const Div2 = styled.div`
+  grid-area: 'nav';
   display: grid;
-  /* grid-gap: 20px; */
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   color: white;
+
+  @media (max-width: 768px) {
+    width: 70%;
+    padding: 1rem;
+  }
 `
 
-const ImgResponse = styled.img`
+const Div3 = styled.div`
+  grid-area: 'social';
+`
+
+const Div4 = styled.div`
+  grid-area: 'copyright';
+`
+
+const Img1 = styled.img`
   width: 50%;
 
   display: grid;
@@ -80,7 +108,7 @@ const Link1 = styled(Link)`
   }
 `
 
-const PResponse = styled.p`
+const P1 = styled.p`
   grid-column: 1 / span 3;
   text-align: center;
   margin: 0;
