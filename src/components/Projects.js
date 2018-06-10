@@ -6,7 +6,7 @@ import { Div, H1, P, Img } from '../assets/Matrix'
 const Projects = () => (
   <Div modifier={['py1']}>
     <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite', 'bRadius5px']}>Projects</P>
-    <Div modifiers={['dFlex', 'fjcBetween', 'tCenter']}>
+    <Div1>
       <Div modifiers={['pt3']}>
         <Link to='/project1'>
           <Img1 modifiers={['w75']} src='https://i.imgur.com/k0dZG6j.png' alt='Project 1' />
@@ -28,9 +28,19 @@ const Projects = () => (
         <H1>Leesburg South</H1>
         <P>Single Family</P>
       </Div>
-    </Div>
+    </Div1>
   </Div>
 )
+
+const Div1 = styled(Div)`
+  display: grid;
+  text-align: center;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+`
 
 const Img1 = styled(Img)`
   &:hover {
