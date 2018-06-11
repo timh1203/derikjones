@@ -6,7 +6,7 @@ const Nav2 = () => (
   <Div1>
     <Div2>
       <Link to='/'>
-        <Img1 src="https://i.imgur.com/5x6n6r3.png" alt="logo" />
+        <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
       </Link>
     </Div2>
 
@@ -30,6 +30,8 @@ const Div1 = styled.div`
   grid-auto-flow: column;
   width: 100%;
   align-content: space-between;
+  background: #333333;
+  margin: 0;
 
   @media (max-width: 768px) {
     grid-auto-flow: rows;
@@ -43,6 +45,7 @@ const Div1 = styled.div`
 const Div2 = styled.div`
   grid-area: 'logo';
   justify-self: start;
+  align-self: center;
 
   @media (max-width: 768px) {
     justify-self: center;
@@ -76,28 +79,29 @@ const Img1 = styled.img`
 `
 
 const Link1 = styled(Link)`
-  color: black;
+  color: white;
   font-size: 0.8rem;
   text-decoration: none;
-  border-right: 5px solid black;
+  border-right: 5px solid white;
   padding: 0.2rem;
   
   &:hover {
     text-decoration: none;
-    border-right: 5px solid #82DBFA;
+    border-right: 5px solid black;
     color: black;
-    /* text-shadow: 0 0 2px #82DBFA; */
+    text-shadow: 0 0 3px white;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    border-top: 5px solid black;
+    border-top: 5px solid white;
     border-right: none;
 
     &:hover {
-      border-top: 5px solid #82DBFA;
+      color: black;
+      border-top: 5px solid black;
       border-right: none;
-      /* text-shadow: 0 0 2px #82DBFA; */
+      text-shadow: 0 0 3px white;
     }
   }
 `

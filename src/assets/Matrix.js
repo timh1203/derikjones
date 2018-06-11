@@ -141,3 +141,12 @@ export const Hr = styled.hr`
   margin: 2rem auto;
   ${applyStyleModifiers(Modifiers)}
 `
+
+export const Hr1 = styled.hr`
+  height: 5px;
+  background: #333333;
+  border-radius: 50%;
+  width: 30%;
+  opacity: 0.3;
+  margin: 2rem auto;
+`
