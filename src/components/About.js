@@ -59,7 +59,7 @@ const Div2 = styled.div`
   border-radius: 15px;
 
   @media (max-width: 768px) {
-    width: 90%;
+    width: 70%;
   }
 `
 
@@ -98,6 +98,7 @@ const P1 = styled.p`
   @media (max-width: 768px) {
     justify-self: center;
     text-align: center;
+    width: 60%;
   }
 `
 

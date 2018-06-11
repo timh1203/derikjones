@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { instagram } from '../helpers/ig'
 import Photo from './Photo'
-import { Div, P } from '../assets/Matrix'
+import { Div, P1 } from '../assets/Matrix'
 
-class Photos extends React.Component {
+class Photography extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -44,7 +44,7 @@ class Photos extends React.Component {
 
     return (
       <Div modifier={['py1']}>
-        <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite', 'bRadius5px']}>Photography</P>
+        <P1>Photography</P1>
         <Div1>
           { Object.keys(photos).map( key => 
             <Photo key={key} details={photos[key]} />) 
@@ -57,4 +57,4 @@ class Photos extends React.Component {
   
 }
 
-export default Photos
+export default Photography

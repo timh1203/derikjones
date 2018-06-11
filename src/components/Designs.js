@@ -1,11 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, H1, P, Img } from '../assets/Matrix'
+import { Div, H1, P, P1, Img } from '../assets/Matrix'
 
 const Designs = () => (
   <Div modifier={['py1']}>
-    <P modifiers={['tCenter', 'ul', 'rotate5L', 'boxUp', 'm0A', 'w10', 'bGray', 'cWhite', 'bRadius5px']}>3d Design</P>
+    <P1>3d Designs</P1>
     <Div1>
       <Div modifiers={['pt3']}>
         <Link to='/design1'>

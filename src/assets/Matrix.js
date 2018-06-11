@@ -131,6 +131,25 @@ export const P = styled.p`
   ${applyStyleModifiers(Modifiers)}
 `
 
+export const P1 = styled.p`
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  text-decoration: underline;
+  transform: rotate(-5deg);
+  border: 1px solid black;
+  margin: 0 auto;
+  background: #333333;
+  color: white;
+  border-radius: 5px;
+  width: 10%;
+  ${applyStyleModifiers(Modifiers)}
+
+  @media (max-width: 768px) {
+    width: 18%;
+    font-size: 1.2rem;
+  }
+`
+
 export const Ul = styled.ul`
   ${applyStyleModifiers(Modifiers)}
 `
