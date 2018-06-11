@@ -8,8 +8,8 @@ const Model3 = () => (
     <Nav2 />
     <H1>Middleway</H1>
     <Hr1 />
-    <A href='https://i.imgur.com/idFt6go.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/idFt6go.png' alt='Design 3' />
+    <A href="https://i.imgur.com/idFt6go.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/idFt6go.png" alt="Design 3" />
     </A>
   </Wrapper1>
 )

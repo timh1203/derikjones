@@ -12,23 +12,23 @@ class Photography extends React.Component {
     }
   }
 
+  componentDidMount() {
+    instagram.get('users/self/media/recent')
+      .then((res) => {
+        const photos = res.data.slice(0, 3);
+        this.setState({ photos })
+      })
+      .catch((err) => {
+        console.log('error' + err); // eslint-disable-line
+      })
+  }
+
   addPhotos = (data) => {
-    let photos = {...this.state.photos}
+    let photos = { ...this.state.photos }
     photos = data
     this.setState({ photos })
   }
 
-  componentDidMount() {
-    instagram.get('users/self/media/recent')
-      .then((res) => {
-        let photos = res.data.slice(0, 3);
-        this.setState({ photos })
-      })
-      .catch((err) => {
-          console.log("error" + err);
-      })
-  }
-  
   render() {
     const { photos } = this.state
     const Div1 = styled(Div)`
@@ -46,15 +46,13 @@ class Photography extends React.Component {
       <Div modifier={['py1']}>
         <P1>Photography</P1>
         <Div1>
-          { Object.keys(photos).map( key => 
-            <Photo key={key} details={photos[key]} />) 
+          { Object.keys(photos).map(key =>
+            <Photo key={key} details={photos[key]} />)
           }
         </Div1>
       </Div>
     )
   }
-
-  
 }
 
 export default Photography

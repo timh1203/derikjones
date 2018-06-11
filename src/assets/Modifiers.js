@@ -12,7 +12,7 @@ export const Modifiers = {
   dNone: () => `
     display: none;
   `,
-  vHidden: () =>  `
+  vHidden: () => `
     visibility:hidden;
   `,
 
@@ -85,7 +85,7 @@ export const Modifiers = {
   mt2R: () => `
     margin-top: 2rem;
   `,
-  
+
   // Window
   wA: () => `
     width: auto;

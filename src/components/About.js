@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import { Div, Img, H1, P, A } from '../assets/Matrix'
+import { Div, H1, P, A } from '../assets/Matrix'
 
 const About = () => (
-  <Section1 id='About'>
+  <Section1 id="About">
     <Div1>
       <Div2>
         <H1>Whatever good things we build end up building us.</H1>
@@ -14,12 +14,12 @@ const About = () => (
 
       <Div3>
         <Div4>
-          <Img1 src='https://i.imgur.com/vxJq5Wl.jpg' />
+          <Img1 src="https://i.imgur.com/vxJq5Wl.jpg" />
           <Div>
-            <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
+            <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
               <FaLinkedinSquare1 size={50} />
             </A>
-            <A href='https://www.instagram.com/rad_jones_photography/'>
+            <A href="https://www.instagram.com/rad_jones_photography/">
               <FaInstagram1 size={50} />
             </A>
           </Div>

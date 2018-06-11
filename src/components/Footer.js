@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import { Section, Div, H1, A, P } from '../assets/Matrix'
+import { H1, A } from '../assets/Matrix'
 
 const Footer = () => (
   <Section1>
@@ -24,10 +24,10 @@ const Footer = () => (
     </Div2>
 
     <Div3>
-      <A href='https://www.linkedin.com/in/derik-jones-b3722b102/'>
+      <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
         <FaLinkedinSquare1 size={50} />
       </A>
-      <A href='https://www.instagram.com/rad_jones_photography/'>
+      <A href="https://www.instagram.com/rad_jones_photography/">
         <FaInstagram1 size={50} />
       </A>
     </Div3>

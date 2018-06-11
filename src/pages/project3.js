@@ -8,24 +8,24 @@ const Project3 = () => (
     <Nav2 />
     <H1>Leesburg South</H1>
     <Hr1 />
-    <A href='https://i.imgur.com/qXkvDah.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/qXkvDah.png' alt='Project 3a' />
+    <A modifiers={['w90']} href="https://i.imgur.com/qXkvDah.png">
+      <Img src="https://i.imgur.com/qXkvDah.png" alt="Project 3a" />
     </A>
     <Hr1 />
-    <A href='https://i.imgur.com/WMBCRUA.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/WMBCRUA.png' alt='Project 3b' />
+    <A modifiers={['w90']} href="https://i.imgur.com/WMBCRUA.png">
+      <Img src="https://i.imgur.com/WMBCRUA.png" alt="Project 3b" />
     </A>
     <Hr1 />
-    <A href='https://i.imgur.com/WZQFqp7.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/WZQFqp7.png' alt='Project 3c' />
+    <A modifiers={['w90']} href="https://i.imgur.com/WZQFqp7.png">
+      <Img src="https://i.imgur.com/WZQFqp7.png" alt="Project 3c" />
     </A>
     <Hr1 />
-    <A href='https://i.imgur.com/78iC8wJ.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/78iC8wJ.png' alt='Project 3d' />
+    <A modifiers={['w90']} href="https://i.imgur.com/78iC8wJ.png">
+      <Img src="https://i.imgur.com/78iC8wJ.png" alt="Project 3d" />
     </A>
     <Hr1 />
-    <A href='https://i.imgur.com/sAa9vNG.png'>
-      <Img modifiers={['w90']} src='https://i.imgur.com/sAa9vNG.png' alt='Project 3e' />
+    <A modifiers={['w90']} href="https://i.imgur.com/sAa9vNG.png">
+      <Img src="https://i.imgur.com/sAa9vNG.png" alt="Project 3e" />
     </A>
   </Wrapper1>
 )

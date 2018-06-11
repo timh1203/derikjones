@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Nav = () => (
   <Div1>
     <Div2>
-      <Link to='/'>
+      <Link to="/">
         <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
       </Link>
     </Div2>

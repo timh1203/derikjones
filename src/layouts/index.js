@@ -1,10 +1,8 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import './index.css'
-import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { Container, Body, Div } from '../assets/Matrix'
+import { Container, Div } from '../assets/Matrix'
 
 const Layout = ({ children, data }) => (
   <Container>
@@ -22,10 +20,6 @@ const Layout = ({ children, data }) => (
     </Div>
   </Container>
 )
-
-Layout.propTypes = {
-  children: PropTypes.func,
-}
 
 export default Layout
 
