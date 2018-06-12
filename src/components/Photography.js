@@ -11,7 +11,7 @@ const Photography = () => (
           <Img1 src="https://i.imgur.com/7RHSjUt.jpg" alt="Photo 1" />
         </A>
         <P>
-          1 <Span className="icons">💬</Span>| <Span className="icons">❤️</Span> 40
+          1 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 40
         </P>
         <P modifiers={['w75', 'm0A']}>
           Copenhagen, A city rich in 17th century architecture!
@@ -22,7 +22,7 @@ const Photography = () => (
           <Img1 src="https://i.imgur.com/IYWrU1k.jpg" alt="Photo 2" />
         </A>
         <P>
-          3 <Span className="icons">💬</Span>| <Span className="icons">❤️</Span> 33
+          3 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 33
         </P>
         <P modifiers={['w75', 'm0A']}>
           Gamla Linkoping Open Air-Market
@@ -33,7 +33,7 @@ const Photography = () => (
           <Img1 src="https://i.imgur.com/fIpzycI.jpg" alt="Photo 3" />
         </A>
         <P>
-          1 <Span className="icons">💬</Span>| <Span className="icons">❤️</Span> 45
+          1 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 45
         </P>
         <P modifiers={['w75', 'm0A']}>
           Historic buildings are true works of art- look at the detail in this church's ceiling!
