@@ -9,7 +9,6 @@ const Nav = () => (
         <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
       </Link>
     </Div2>
-
     <Div3>
       <Link1 to="/#About">
         <H11>About</H11>

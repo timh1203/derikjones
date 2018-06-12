@@ -12,7 +12,6 @@ const Contact = () => (
       <P modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P>
       <P modifiers={['m0']}>Architectural Designer</P>
     </Div1>
-
     <Div id="emailForm" modifiers={['tCenter']}>
       <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST">
         <Input className="hidden" type="hidden" name="From" value="derikjones.com" />

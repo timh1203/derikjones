@@ -11,20 +11,18 @@ const About = () => (
         <H1>Whatever good things we build end up building us.</H1>
         <P>-Jim Rohn</P>
       </Div2>
-
       <Div3>
         <Div4>
           <Img1 src="https://i.imgur.com/vxJq5Wl.jpg" />
           <Div>
             <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
-              <FaLinkedinSquare1 size={50} />
+              <FaLinkedinSquare1 size={45} />
             </A>
             <A href="https://www.instagram.com/rad_jones_photography/">
-              <FaInstagram1 size={50} />
+              <FaInstagram1 size={45} />
             </A>
           </Div>
         </Div4>
-
         <P1>
           I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
         </P1>
@@ -110,6 +108,10 @@ const Img1 = styled.img`
   border-radius: 50%;
   width: 50%;
   border: 5px double black;
+
+  @media (max-width: 376px) {
+    width: 70%;
+  }
 `
 
 const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
@@ -121,6 +123,10 @@ const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
 
   &:hover {
     box-shadow: 0 0 20px #82DBFA;
+  }
+
+  @media (max-width: 376px) {
+    
   }
 `
 

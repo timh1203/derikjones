@@ -10,7 +10,6 @@ const Footer = () => (
     <Div1>
       <Img1 src="https://i.imgur.com/SIMExmd.png" alt="logo" />
     </Div1>
-
     <Div2>
       <Link1 to="/#Portfolio">
         <H1>About</H1>
@@ -22,13 +21,12 @@ const Footer = () => (
         <H1>Contact</H1>
       </Link1>
     </Div2>
-
     <Div3>
       <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
-        <FaLinkedinSquare1 size={50} />
+        <FaLinkedinSquare1 size={45} />
       </A>
       <A href="https://www.instagram.com/rad_jones_photography/">
-        <FaInstagram1 size={50} />
+        <FaInstagram1 size={45} />
       </A>
     </Div3>
 
