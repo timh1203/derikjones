@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, H1, P, P1, Img } from '../assets/Matrix'
+import { Div, H1, P, P1, Img1 } from '../assets/Matrix'
 
 const Designs = () => (
   <Div modifier={['py1']}>
@@ -40,13 +40,6 @@ const Div1 = styled(Div)`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-  }
-`
-
-const Img1 = styled(Img)`
-  &:hover {
-    filter: brightness(80%);
-    box-shadow: 0 0 10px #82DBFA;
   }
 `
 

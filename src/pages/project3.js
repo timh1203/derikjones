@@ -8,24 +8,24 @@ const Project3 = () => (
     <Nav2 />
     <H1>Leesburg South</H1>
     <Hr1 />
-    <A modifiers={['w90']} href="https://i.imgur.com/qXkvDah.png">
-      <Img src="https://i.imgur.com/qXkvDah.png" alt="Project 3a" />
+    <A href="https://i.imgur.com/qXkvDah.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/qXkvDah.png" alt="Project 3a" />
     </A>
     <Hr1 />
-    <A modifiers={['w90']} href="https://i.imgur.com/WMBCRUA.png">
-      <Img src="https://i.imgur.com/WMBCRUA.png" alt="Project 3b" />
+    <A href="https://i.imgur.com/WMBCRUA.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/WMBCRUA.png" alt="Project 3b" />
     </A>
     <Hr1 />
-    <A modifiers={['w90']} href="https://i.imgur.com/WZQFqp7.png">
-      <Img src="https://i.imgur.com/WZQFqp7.png" alt="Project 3c" />
+    <A href="https://i.imgur.com/WZQFqp7.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/WZQFqp7.png" alt="Project 3c" />
     </A>
     <Hr1 />
-    <A modifiers={['w90']} href="https://i.imgur.com/78iC8wJ.png">
-      <Img src="https://i.imgur.com/78iC8wJ.png" alt="Project 3d" />
+    <A href="https://i.imgur.com/78iC8wJ.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/78iC8wJ.png" alt="Project 3d" />
     </A>
     <Hr1 />
-    <A modifiers={['w90']} href="https://i.imgur.com/sAa9vNG.png">
-      <Img src="https://i.imgur.com/sAa9vNG.png" alt="Project 3e" />
+    <A href="https://i.imgur.com/sAa9vNG.png">
+      <Img modifiers={['w90']} src="https://i.imgur.com/sAa9vNG.png" alt="Project 3e" />
     </A>
   </Wrapper1>
 )
@@ -33,10 +33,10 @@ const Project3 = () => (
 const Wrapper1 = styled(Wrapper)`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   text-align: center;
-  margin: 0 auto;
   padding: 0;
+  margin-bottom: 3rem;
 `
 
 export default Project3

@@ -17,10 +17,10 @@ const Model3 = () => (
 const Wrapper1 = styled(Wrapper)`
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   text-align: center;
-  margin: 0 auto;
   padding: 0;
+  margin-bottom: 3rem;
 `
 
 export default Model3

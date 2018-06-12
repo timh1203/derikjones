@@ -52,19 +52,22 @@ const Section1 = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-areas:
-      'logo'
-      'nav'
-      'social'
-      'copyright'
+      "logo"
+      "nav"
+      "social"
+      "copyright"
+  }
+
+  @media (max-width: 375px) {
   }
 `
 
 const Div1 = styled.div`
-  grid-area: 'logo';
+  grid-area: "logo";
 `
 
 const Div2 = styled.div`
-  grid-area: 'nav';
+  grid-area: "nav";
   display: grid;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
@@ -78,20 +81,32 @@ const Div2 = styled.div`
 `
 
 const Div3 = styled.div`
-  grid-area: 'social';
+  grid-area: "social";
+
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+  }
 `
 
 const Div4 = styled.div`
-  grid-area: 'copyright';
+  grid-area: "copyright";
+  grid-column: 2 / span 1;
+
+  @media (max-width: 768px) {
+    grid-column: 1 / span 1;
+  }
 `
 
 const Img1 = styled.img`
   width: 50%;
-
   display: grid;
   justify-self: center;
   margin: 0 auto;
   text-align: center;
+
+  @media (max-width: 768px) {
+    width: 70%;
+  }
 `
 
 const Link1 = styled(Link)`
@@ -114,6 +129,10 @@ const P1 = styled.p`
   margin: 0;
   padding: 0;
   align-self: end;
+
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+  }
 `
 
 const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
@@ -125,6 +144,10 @@ const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
 
   &:hover {
     box-shadow: 0 0 20px #82DBFA;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
   }
 `
 
@@ -138,6 +161,10 @@ const FaInstagram1 = styled(FaInstagram)`
 
   &:hover {
     box-shadow: 0 0 20px #82DBFA;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 1rem;
   }
 `
 

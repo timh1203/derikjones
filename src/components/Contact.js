@@ -12,6 +12,7 @@ const Contact = () => (
       <P modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P>
       <P modifiers={['m0']}>Architectural Designer</P>
     </Div1>
+
     <Div id="emailForm" modifiers={['tCenter']}>
       <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST">
         <Input className="hidden" type="hidden" name="From" value="derikjones.com" />
@@ -40,7 +41,7 @@ const Section1 = styled.section`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     align-items: center;
     align-content: center;
   }
@@ -50,6 +51,10 @@ const Div1 = styled.div`
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px 150px;
   padding: 1rem;
+
+  @media (max-width: 375px) {
+    margin: 1rem;
+  }
 `
 
 const Form1 = styled.form`
@@ -66,6 +71,10 @@ const Img1 = styled.img`
   width: 25%;
   border-radius: 50%;
   border: 5px double white;
+
+  @media (max-width: 375px) {
+    width: 50%;
+  }
 `
 
 export default Contact

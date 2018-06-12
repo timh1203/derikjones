@@ -79,9 +79,22 @@ export const Img = styled.img`
   ${applyStyleModifiers(Modifiers)}
 `
 
+export const Img1 = styled.img`
+  width: 75%;
+
+  &:hover {
+    filter: brightness(80%);
+    box-shadow: 0 0 10px #82DBFA;
+  }
+
+  @media (max-width: 376px) {
+    width: 90%;
+  }
+`
+
 export const Input = styled.input`
   font-size: 1rem;
-  width: 300px;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
@@ -91,7 +104,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   font-size: 1rem;
-  width: 300px;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
@@ -147,6 +160,9 @@ export const P1 = styled.p`
   @media (max-width: 768px) {
     width: 18%;
     font-size: 1.2rem;
+  }
+  @media (max-width: 376px) {
+    width: 40%;
   }
 `
 

@@ -24,6 +24,7 @@ const About = () => (
             </A>
           </Div>
         </Div4>
+
         <P1>
           I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
         </P1>
@@ -39,7 +40,7 @@ const Section1 = styled.section`
 const Div1 = styled.div`
   @media (max-width: 768px) {
     grid-auto-flow: rows;
-    justify-items: center;
+    justify-content: center;
     grid-template-areas:
       'quote'
       'bio'
@@ -79,7 +80,7 @@ const Div3 = styled.div`
 `
 
 const Div4 = styled.div`
-  width: 500px;
+  width: 70%;
   border-right: 5px solid rgba(0, 0, 0, 0.2);
   
   @media (max-width: 768px) {
@@ -90,15 +91,18 @@ const Div4 = styled.div`
 const P1 = styled.p`
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
-  text-align: left;
   width: 90%;
-  padding-left: 1rem;
+  text-align: left;
   justify-self: start;
 
   @media (max-width: 768px) {
     justify-self: center;
     text-align: center;
     width: 60%;
+  }
+
+  @media (max-width: 375px) {
+    width: 95%;
   }
 `
 
