@@ -1,12 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import Header from '../components/Header'
-import About from '../components/About'
-import Portfolio from '../components/Portfolio'
-import Contact from '../components/Contact'
 import Img from 'gatsby-image'
+import { Layout, Header, About, Portfolio, Contact } from '../components/index.js'
 
 const IndexPage = (props) => (
   <Layout>
