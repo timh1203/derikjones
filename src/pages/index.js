@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 import Header from '../components/Header'
 import About from '../components/About'
 import Portfolio from '../components/Portfolio'
@@ -8,18 +9,18 @@ import Contact from '../components/Contact'
 import Img from 'gatsby-image'
 
 const IndexPage = (props) => (
-  <Wrapper>
+  <Layout>
     <Header />
     <About />
     <Portfolio />
     <Contact />
     {console.log(props.data.houseImage.childImageSharp.fluid)}
     {console.log(Img)}
-  </Wrapper>
+  </Layout>
 )
 
 const Wrapper = styled.div`
-  padding: 1rem 0;
+  padding: 0;
 `
 
 export const pageQuery = graphql`
