@@ -11,19 +11,40 @@ const Projects = () => (
         <Link to="/project1">
           <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 1" />
         </Link>
+        <H1>Conceptual Design</H1>
+        <P>Sketchup & V-ray</P>
+      </Div>
+      <Div modifiers={['pt3']}>
+        <Link to="/project1">
+          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 2" />
+        </Link>
+        <H1>Conceptual Design</H1>
+        <P>Sketchup & V-ray</P>
+      </Div>
+      <Div modifiers={['pt3']}>
+        <Link to="/project1">
+          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 3" />
+        </Link>
+        <H1>Conceptual Design</H1>
+        <P>Sketchup & V-ray</P>
+      </Div>
+      <Div modifiers={['pt3']}>
+        <Link to="/project1">
+          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 4" />
+        </Link>
         <H1>Brambleton Virginia</H1>
         <P>Multi-Family</P>
       </Div>
       <Div modifiers={['pt3']}>
         <Link to="/project2">
-          <Img1 src="https://i.imgur.com/yAUDSX7.png" alt="Project 2" />
+          <Img1 src="https://i.imgur.com/yAUDSX7.png" alt="Project 5" />
         </Link>
         <H1>Brambleton Virginia</H1>
         <P>Townhome</P>
       </Div>
       <Div modifiers={['pt3']}>
         <Link to="/project3">
-          <Img1 src="https://i.imgur.com/qXkvDah.png" alt="Project 3" />
+          <Img1 src="https://i.imgur.com/qXkvDah.png" alt="Project 6" />
         </Link>
         <H1>Leesburg South</H1>
         <P>Single Family</P>

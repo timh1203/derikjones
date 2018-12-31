@@ -6,16 +6,15 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-plugin-eslint',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        test: /\.js$|\.jsx$/,
-        exclude: /(node_modules|cache|public)/,
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
+    'gatsby-transformer-remark',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
