@@ -31,7 +31,7 @@ const Footer = () => (
     </Div3>
 
     <Div4>
-      <P1>Copyright © 2018 Derik S. Jones</P1>
+      <P1>Copyright © 2019 Derik S. Jones</P1>
     </Div4>
   </Section1>
 )
@@ -63,7 +63,6 @@ const Section1 = styled.div`
 const Div1 = styled.div`
   grid-area: "logo";
 `
-
 const Div2 = styled.div`
   grid-area: "nav";
   display: grid;
@@ -71,48 +70,39 @@ const Div2 = styled.div`
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   color: white;
-
   @media (max-width: 768px) {
     width: 70%;
     padding: 1rem;
   }
 `
-
 const Div3 = styled.div`
   grid-area: "social";
-
   @media (max-width: 768px) {
     margin: 1rem 0;
   }
 `
-
 const Div4 = styled.div`
   grid-area: "copyright";
   grid-column: 2 / span 1;
-
   @media (max-width: 768px) {
     grid-column: 1 / span 1;
   }
 `
-
 const Img1 = styled.img`
   width: 50%;
   display: grid;
   justify-self: center;
   margin: 0 auto;
   text-align: center;
-
   @media (max-width: 768px) {
     width: 70%;
   }
 `
-
 const Link1 = styled(Link)`
   color: white;
   font-size: 0.6rem;
   text-decoration: none;
   border-top: 5px solid white;
-
   &:hover {
     text-decoration: none;
     border-top: 5px solid black;
@@ -120,35 +110,30 @@ const Link1 = styled(Link)`
     text-shadow: 0 0 3px white;
   }
 `
-
 const P1 = styled.p`
-  grid-column: 1 / span 3;
+  font-size: 1.6rem;
+  padding-bottom: 0.4rem;
   text-align: center;
+  grid-column: 1 / span 3;
   margin: 0;
-  padding: 0;
   align-self: end;
-
   @media (max-width: 768px) {
     margin: 1rem 0;
   }
 `
-
 const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
   color: #0077B5;
   border: 1px solid #0077B5;
   border-radius: 10%;
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   margin: 2rem;
-
   &:hover {
     box-shadow: 0 0 20px #82DBFA;
   }
-
   @media (max-width: 768px) {
     margin: 0 1rem;
   }
 `
-
 const FaInstagram1 = styled(FaInstagram)`
   color: white;
   border-radius: 10%;
@@ -156,11 +141,9 @@ const FaInstagram1 = styled(FaInstagram)`
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
   margin: 2rem;
-
   &:hover {
     box-shadow: 0 0 20px #82DBFA;
   }
-
   @media (max-width: 768px) {
     margin: 0 1rem;
   }
