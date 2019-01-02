@@ -46,7 +46,6 @@ const Section1 = styled.div`
   color: white;
   background: #333333;
   text-align: center;
-
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -55,11 +54,7 @@ const Section1 = styled.div`
       "social"
       "copyright"
   }
-
-  @media (max-width: 375px) {
-  }
 `
-
 const Div1 = styled.div`
   grid-area: "logo";
 `

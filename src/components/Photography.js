@@ -79,8 +79,8 @@ const P1 = styled.p`
     width: 18%;
     font-size: 1.4rem;
   }
-  @media (max-width: 376px) {
-    width: 40%;
+  @media (max-width: 400px) {
+    width: 30%;
   }
 `
 const P2 = styled.p`

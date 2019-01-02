@@ -100,8 +100,9 @@ const P2 = styled.p`
     text-align: center;
     width: 60%;
   }
-  @media (max-width: 375px) {
-    width: 95%;
+  @media (max-width: 400px) {
+    width: 80%;
+    font-size: 2rem;
   }
 `
 const Img1 = styled.img`
