@@ -93,6 +93,12 @@ const GlobalStyles = createGlobalStyle`
   section {
     margin-top: 5rem;
   }
+  h1 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
 `
 
 export default Layout
