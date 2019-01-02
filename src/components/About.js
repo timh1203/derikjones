@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
+import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import { Div, A } from '../assets/Matrix'
 
 const About = () => (
   <Section1 id="About">
@@ -14,14 +13,14 @@ const About = () => (
       <Div3>
         <Div4>
           <Img1 src="https://i.imgur.com/vxJq5Wl.jpg" />
-          <Div>
-            <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
+          <div>
+            <a href="https://www.linkedin.com/in/derik-jones-b3722b102/" target="_blank">
               <FaLinkedinSquare1 size={45} />
-            </A>
-            <A href="https://www.instagram.com/rad_jones_photography/">
+            </a>
+            <a href="https://www.instagram.com/rad_jones_photography/" target="_blank">
               <FaInstagram1 size={45} />
-            </A>
-          </Div>
+            </a>
+          </div>
         </Div4>
         <P2>
           I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
@@ -35,7 +34,6 @@ const Section1 = styled.section`
   margin: 4rem 0;
 `
 const Div1 = styled.div`
-
   @media (max-width: 768px) {
     grid-auto-flow: rows;
     justify-content: center;

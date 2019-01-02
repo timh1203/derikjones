@@ -1,7 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div, P } from '../assets/Matrix'
+import Link from 'gatsby-link'
 
 const Designs = () => (
   <Div0>
@@ -58,12 +57,11 @@ const Div0 = styled.div`
   width: 90%;
   margin: 0 auto;
 `
-const Div1 = styled(Div)`
+const Div1 = styled.div`
   display: grid;
   text-align: center;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }

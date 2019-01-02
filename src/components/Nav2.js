@@ -1,6 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 const Nav2 = () => (
   <Div1>
@@ -11,13 +11,13 @@ const Nav2 = () => (
     </Div2>
     <Div3>
       <Link1 to="/#About">
-        <H11>About</H11>
+        <H1a>About</H1a>
       </Link1>
       <Link1 to="/#Portfolio">
-        <H11>Portfolio</H11>
+        <H1a>Portfolio</H1a>
       </Link1>
       <Link1 to="/#Contact">
-        <H11>Contact</H11>
+        <H1a>Contact</H1a>
       </Link1>
     </Div3>
   </Div1>
@@ -31,7 +31,6 @@ const Div1 = styled.div`
   align-content: space-between;
   background: #333333;
   margin: 0;
-
   @media (max-width: 768px) {
     grid-auto-flow: rows;
     justify-items: center;
@@ -40,24 +39,20 @@ const Div1 = styled.div`
       "nav"
   }
 `
-
 const Div2 = styled.div`
   grid-area: 'logo';
   justify-self: start;
   align-self: center;
-
   @media (max-width: 768px) {
     justify-self: center;
   }
 `
-
 const Div3 = styled.div`
   grid-area: 'nav';
   display: grid;
   justify-items: end;
   padding-right: 2rem;
   margin: 2rem 0;
-
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
@@ -67,7 +62,6 @@ const Div3 = styled.div`
     margin: 0;
   }
 `
-
 const Img1 = styled.img`
   width: 60%;
   margin: 1rem;
@@ -76,7 +70,6 @@ const Img1 = styled.img`
     width: 75%;
   }
 `
-
 const Link1 = styled(Link)`
   color: white;
   font-size: 0.8rem;
@@ -101,8 +94,7 @@ const Link1 = styled(Link)`
     }
   }
 `
-
-const H11 = styled.h1`
+const H1a = styled.h1`
   font-family: 'Crimson Text', serif;
   font-size: 2.4rem;
   margin: 0;

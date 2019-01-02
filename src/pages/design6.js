@@ -39,6 +39,10 @@ const Img1 = styled.img`
   width: 90%;
   border-radius: 5px;
   box-shadow: 0 3px 10px #cccccc;
+  &:hover {
+    filter: brightness(80%);
+    box-shadow: 0 0 10px #82DBFA;
+  }
 `
 
 export default Design6

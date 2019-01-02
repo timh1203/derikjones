@@ -1,7 +1,5 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import { Layout, Header, About, Portfolio, Contact } from '../components/index.js'
+import { Layout, Header, About, Portfolio, Contact } from '../components'
 
 const IndexPage = (props) => (
   <Layout>
@@ -11,31 +9,5 @@ const IndexPage = (props) => (
     <Contact />
   </Layout>
 )
-
-export const pageQuery = graphql`
-  query {
-    houseImage: file(relativePath: { eq: "house.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    townhouseImage: file(relativePath: { eq: "townhouse.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    },
-    clubhouseImage: file(relativePath: { eq: "clubhouse.jpg"}) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default IndexPage

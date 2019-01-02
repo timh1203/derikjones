@@ -5,14 +5,14 @@ const Contact = () => (
   <Section1 id="Contact">
     <Div1>
       <Img1 src="https://i.imgur.com/nFAGd8s.jpg" />
-      <P1 modifiers={['m0', 'fLarger']}>I would love to connect with you and</P1>
-      <P1 modifiers={['m0', 'fLarger']}>always open to new opportunities!</P1>
+      <P1>I would love to connect with you and</P1>
+      <P1>always open to new opportunities!</P1>
       <br />
       <br />
-      <P2 modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P2>
-      <P1 modifiers={['m0']}>Architectural Designer</P1>
+      <P2>Derik Jones</P2>
+      <P1>Architectural Designer</P1>
     </Div1>
-    <Div2 id="emailForm" modifiers={['tCenter']}>
+    <Div2 id="emailForm">
       <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST">
         <Input1 className="hidden" type="hidden" name="From" value="derikjones.com" />
         <Input1 className="hidden" type="hidden" name="_gotcha" />
@@ -103,7 +103,7 @@ const Button1 = styled.button`
   width: 50%;
   border-radius: 5px;
   font-family: 'Crimson Text', serif;
-  font-size: 1rem;
+  font-size: 1.4rem;
   padding: 0.5rem;
   margin: 0 auto;
   transition: all ease 0.2s;
@@ -118,4 +118,5 @@ const Button1 = styled.button`
     font-size: 1.4rem;
   }
 `
+
 export default Contact

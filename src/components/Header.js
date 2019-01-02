@@ -1,8 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import Nav from '../components/Nav'
-import { Div } from '../assets/Matrix'
+import Link from 'gatsby-link'
+import { Nav } from '../components'
 
 const Header = () => (
   <Section1>
@@ -11,11 +10,11 @@ const Header = () => (
       <H1a>Design</H1a>
       <P1>Shaping Architecture</P1>
     </Div1>
-    <Div>
+    <div>
       <Link1 to="/#About">
         <H1b>↓</H1b>
       </Link1>
-    </Div>
+    </div>
   </Section1>
 )
 

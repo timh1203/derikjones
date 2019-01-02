@@ -1,9 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square';
+import Link from 'gatsby-link'
+import FaLinkedinSquare from 'react-icons/lib/fa/linkedin-square'
 import FaInstagram from 'react-icons/lib/fa/instagram'
-import { H1, A } from '../assets/Matrix'
 
 const Footer = () => (
   <Section1>
@@ -12,26 +11,26 @@ const Footer = () => (
     </Div1>
     <Div2>
       <Link1 to="/#Portfolio">
-        <H1>About</H1>
+        <P1>About</P1>
       </Link1>
       <Link1 to="/#Photos">
-        <H1>Portfolio</H1>
+        <P1>Portfolio</P1>
       </Link1>
       <Link1 to="/#Contact">
-        <H1>Contact</H1>
+        <P1>Contact</P1>
       </Link1>
     </Div2>
     <Div3>
-      <A href="https://www.linkedin.com/in/derik-jones-b3722b102/">
+      <a href="https://www.linkedin.com/in/derik-jones-b3722b102/" target="_blank">
         <FaLinkedinSquare1 size={45} />
-      </A>
-      <A href="https://www.instagram.com/rad_jones_photography/">
+      </a>
+      <a href="https://www.instagram.com/rad_jones_photography/" target="_blank">
         <FaInstagram1 size={45} />
-      </A>
+      </a>
     </Div3>
 
     <Div4>
-      <P1>Copyright © 2019 Derik S. Jones</P1>
+      <P2>Copyright © 2019 Derik S. Jones</P2>
     </Div4>
   </Section1>
 )
@@ -107,6 +106,12 @@ const Link1 = styled(Link)`
   }
 `
 const P1 = styled.p`
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  font-size: 2.4rem;
+  padding-top: 1rem;
+`
+const P2 = styled.p`
   font-size: 1.6rem;
   padding-bottom: 0.4rem;
   text-align: center;

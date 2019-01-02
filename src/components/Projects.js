@@ -1,7 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import styled from 'styled-components'
-import { Div } from '../assets/Matrix'
+import Link from 'gatsby-link'
 
 const Projects = () => (
   <Div0>
@@ -37,7 +36,7 @@ const Div0 = styled.div`
   width: 90%;
   margin: 0 auto;
 `
-const Div1 = styled(Div)`
+const Div1 = styled.div`
   display: grid;
   text-align: center;
   justify-content: center;

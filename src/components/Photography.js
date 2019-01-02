@@ -1,39 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Div, Span, P, A } from '../assets/Matrix'
 
 const Photography = () => (
   <Div0>
     <P1>Photography</P1>
     <Div1>
       <Div2>
-        <A href="https://i.imgur.com/7RHSjUt.jpg" target="_blank">
+        <a href="https://i.imgur.com/7RHSjUt.jpg" target="_blank">
           <Img1 src="https://i.imgur.com/7RHSjUt.jpg" alt="Photo 1" />
-        </A>
+        </a>
         <P2>
-          1 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 40
+          1 <Span1 className="icons">💬</Span1> | <Span1 className="icons">❤️</Span1> 40
         </P2>
         <P2 modifiers={['w75', 'm0A']}>
           Copenhagen, A city rich in 17th century architecture!
         </P2>
       </Div2>
       <Div2>
-        <A href="https://i.imgur.com/IYWrU1k.jpg" target="_blank">
+        <a href="https://i.imgur.com/IYWrU1k.jpg" target="_blank">
           <Img1 src="https://i.imgur.com/IYWrU1k.jpg" alt="Photo 2" />
-        </A>
+        </a>
         <P2>
-          3 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 33
+          3 <Span1 className="icons">💬</Span1> | <Span1 className="icons">❤️</Span1> 33
         </P2>
         <P2 modifiers={['w75', 'm0A']}>
           Gamla Linkoping Open Air-Market
         </P2>
       </Div2>
       <Div2>
-        <A href="https://i.imgur.com/fIpzycI.jpg" target="_blank">
+        <a href="https://i.imgur.com/fIpzycI.jpg" target="_blank">
           <Img1 src="https://i.imgur.com/fIpzycI.jpg" alt="Photo 3" />
-        </A>
+        </a>
         <P2>
-          1 <Span className="icons">💬</Span> | <Span className="icons">❤️</Span> 45
+          1 <Span1 className="icons">💬</Span1> | <Span1 className="icons">❤️</Span1> 45
         </P2>
         <P2 modifiers={['w75', 'm0A']}>
           Historic buildings are true works of art- look at the detail in this church's ceiling!
@@ -48,7 +47,7 @@ const Div0 = styled.div`
   width: 90%;
   margin: 0 auto;
 `
-const Div1 = styled(Div)`
+const Div1 = styled.div`
   display: grid;
   text-align: center;
   justify-content: center;
@@ -100,6 +99,8 @@ const Img1 = styled.img`
   @media (max-width: 376px) {
     width: 90%;
   }
+`
+const Span1 = styled.span`
 `
 
 export default Photography

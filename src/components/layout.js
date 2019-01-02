@@ -1,9 +1,8 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
-import { Container, Div } from '../assets/Matrix'
 import styled, { createGlobalStyle } from 'styled-components'
+import Helmet from 'react-helmet'
+import { Footer } from '../components'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,7 +19,7 @@ const Layout = ({ children }) => (
     }
     render={data => (
       <>
-        <Container>
+        <Container1>
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
@@ -29,12 +28,12 @@ const Layout = ({ children }) => (
             ]}
           >
           </Helmet>
-          <Div>
+          <div>
             {children}
             <Footer />
-          </Div>
+          </div>
           <GlobalStyles />
-        </Container>
+        </Container1>
       </>
     )}
   />
@@ -99,6 +98,9 @@ const GlobalStyles = createGlobalStyle`
   p {
     font-size: 1.2rem;
   }
+`
+const Container1 = styled.div`
+  font-family: 'Montserrat', sans-serif;
 `
 
 export default Layout
