@@ -2,14 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { Layout, Nav2 } from '../components'
 
-const Model1 = () => (
+const Model3 = () => (
   <Layout>
     <Div1>
       <Nav2 />
       <H1a>Conceptual Design</H1a>
       <Hr1 />
       <a href="#">
-        <Img1 src="https://i.imgur.com/XX6RFQc.jpg" alt="Design 1" />
+        <Img1 src="https://i.imgur.com/0hY28uu.jpg" alt="Design 3" />
       </a>
       <a href="#">
         <Button1>View Full Size</Button1>
@@ -62,4 +62,4 @@ const Button1 = styled.button`
   }
 `
 
-export default Model1
+export default Model3
