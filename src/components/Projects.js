@@ -75,7 +75,7 @@ const P1 = styled.p`
 const H1a = styled.h1`
   font-family: 'Crimson Text', serif;
   margin-bottom: 2rem;
-  `
+`
 const P2 = styled.p`
   font-family: 'Crimson Text', serif;
   font-size: 1.6rem;
