@@ -73,6 +73,7 @@ const Div2 = styled.div`
   @media (max-width: 768px) {
     width: 70%;
     padding: 1rem;
+    margin: 2rem 0;
   }
 `
 const Div3 = styled.div`

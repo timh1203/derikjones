@@ -8,12 +8,12 @@ const Header = () => (
   <Section1>
     <Nav />
     <Div1>
-      <H11>Design</H11>
+      <H1a>Design</H1a>
       <P1>Shaping Architecture</P1>
     </Div1>
     <Div>
       <Link1 to="/#About">
-        <H12>↓</H12>
+        <H1b>↓</H1b>
       </Link1>
     </Div>
   </Section1>
@@ -34,19 +34,19 @@ const Div1 = styled.div`
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 `
-const H11 = styled.h1`
-  font-size: 15rem;
+const H1a = styled.h1`
+  font-size: 12rem;
   margin: 0;
   color: white;
   text-decoration: underline;
   font-family: 'Crimson Text', serif;
   text-shadow: 0 0 20px black;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   @media (max-width: 768px) {
-    font-size: 5rem;
+    font-size: 8rem;
   }
 `
-const H12 = styled.h1`
+const H1b = styled.h1`
   font-size: 3rem;
   margin-bottom: 2rem;
   &:hover {
@@ -60,7 +60,7 @@ const P1 = styled.p`
   color: white;
   font-style: italic;
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 `
 const Link1 = styled(Link)`

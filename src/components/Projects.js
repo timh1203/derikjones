@@ -66,7 +66,7 @@ const P1 = styled.p`
   width: 10%;
   @media (max-width: 768px) {
     width: 18%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   @media (max-width: 376px) {
     width: 40%;

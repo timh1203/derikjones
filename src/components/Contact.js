@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Div, Button } from '../assets/Matrix'
 
 const Contact = () => (
   <Section1 id="Contact">
@@ -13,7 +12,7 @@ const Contact = () => (
       <P2 modifiers={['fTangerine', 'fSize2', 'm0']}>Derik Jones</P2>
       <P1 modifiers={['m0']}>Architectural Designer</P1>
     </Div1>
-    <Div id="emailForm" modifiers={['tCenter']}>
+    <Div2 id="emailForm" modifiers={['tCenter']}>
       <Form1 id="contact-form" action="https://formspree.io/jonesderik91@gmail.com" method="POST">
         <Input1 className="hidden" type="hidden" name="From" value="derikjones.com" />
         <Input1 className="hidden" type="hidden" name="_gotcha" />
@@ -21,9 +20,9 @@ const Contact = () => (
         <Input1 id="lastName" type="text" name="Last Name" placeholder="Last Name" required />
         <Input1 id="emailBox" type="email" name="Email" placeholder="Email" required />
         <Textarea1 id="messageBox" type="text" name="Message" placeholder="Message" required></Textarea1>
-        <Button id="send" type="submit" value="Send">Send</Button>
+        <Button1 id="send" type="submit" value="Send">Send</Button1>
       </Form1>
-    </Div>
+    </Div2>
   </Section1>
 )
 
@@ -49,9 +48,14 @@ const Div1 = styled.div`
   background: rgba(0, 0, 0, 0.3);
   border-radius: 10px 150px;
   padding: 2rem;
+  @media (max-width: 768px) {
+    margin-bottom: 4rem;
+  }
   @media (max-width: 375px) {
     margin: 1rem;
   }
+`
+const Div2 = styled.div`
 `
 const Form1 = styled.form`
   display: grid;
@@ -94,5 +98,24 @@ const P2 = styled.p`
   font-size: 3rem;
   font-family: 'Tangerine', cursive;
   margin: 0;
+`
+const Button1 = styled.button`
+  width: 50%;
+  border-radius: 5px;
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  transition: all ease 0.2s;
+  &:hover{
+    color: white;
+    background: #333333;
+    border-radius: 10px;
+    border: 1px solid #82BDFA;
+    box-shadow: 0 0 5px #82DBFA;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+  }
 `
 export default Contact
