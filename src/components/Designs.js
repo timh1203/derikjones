@@ -9,42 +9,42 @@ const Designs = () => (
     <Div1>
       <Div2>
         <Link to="/design1">
-          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 1" />
+          <Img1 src="https://i.imgur.com/XX6RFQc.jpg" alt="Design 1" />
         </Link>
         <H1a>Conceptual Design</H1a>
         <P2>Sketchup & V-ray</P2>
       </Div2>
       <Div2>
         <Link to="/design2">
-          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 2" />
+          <Img1 src="https://i.imgur.com/Itg5Z1m.jpg" alt="Design 2" />
         </Link>
         <H1a>Conceptual Design</H1a>
         <P2>Sketchup & V-ray</P2>
       </Div2>
       <Div2>
         <Link to="/design3">
-          <Img1 src="https://i.imgur.com/k0dZG6j.png" alt="Project 3" />
+          <Img1 src="https://i.imgur.com/0hY28uu.jpg" alt="Design 3" />
         </Link>
         <H1a>Conceptual Design</H1a>
         <P2>Sketchup & V-ray</P2>
       </Div2>
       <Div2>
         <Link to="/design4">
-          <Img1 src="https://i.imgur.com/7USkFg2.png" alt="design 1" />
+          <Img1 src="https://i.imgur.com/7USkFg2.png" alt="Design 4" />
         </Link>
         <H1a>Teagarden</H1a>
         <P2>Illustrator Design & Photoshop</P2>
       </Div2>
       <Div2>
         <Link to="/design5">
-          <Img1 src="https://i.imgur.com/yGY60ZS.png" alt="design 2" />
+          <Img1 src="https://i.imgur.com/yGY60ZS.png" alt="Design 5" />
         </Link>
         <H1a>Grand Villas-Hudson</H1a>
         <P2>Shetckup Design</P2>
       </Div2>
       <Div2>
         <Link to="/design6">
-          <Img1 src="https://i.imgur.com/idFt6go.png" alt="design 3" />
+          <Img1 src="https://i.imgur.com/idFt6go.png" alt="Design 6" />
         </Link>
         <H1a>Middleway</H1a>
         <P2>Illustrator Design & Photoshop</P2>
@@ -70,6 +70,7 @@ const Div1 = styled(Div)`
 `
 const Div2 = styled.div`
   padding-top: 3rem 0;
+  align-self: center;
 `
 const P1 = styled.p`
   font-family: 'Crimson Text', serif;

@@ -28,7 +28,6 @@ const Div1 = styled.div`
   grid-template-columns: 1fr;
   grid-auto-flow: column;
   width: 100%;
-
   @media (max-width: 768px) {
     grid-auto-flow: rows;
     justify-items: center;
@@ -54,7 +53,6 @@ const Div3 = styled.div`
 const Img1 = styled.img`
   width: 30%;
   margin: 1rem;
-
   @media (max-width: 768px) {
     width: 75%;
   }

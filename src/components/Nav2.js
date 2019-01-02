@@ -55,8 +55,8 @@ const Div3 = styled.div`
   grid-area: 'nav';
   display: grid;
   justify-items: end;
-  padding-right: 1rem;
-  margin: 1rem 0;
+  padding-right: 2rem;
+  margin: 2rem 0;
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -82,20 +82,17 @@ const Link1 = styled(Link)`
   font-size: 0.8rem;
   text-decoration: none;
   border-right: 5px solid white;
-  padding: 0.2rem;
-  
+  padding: 1rem;
   &:hover {
     text-decoration: none;
     border-right: 5px solid black;
     color: black;
     text-shadow: 0 0 3px white;
   }
-
   @media (max-width: 768px) {
     width: 100%;
     border-top: 5px solid white;
     border-right: none;
-
     &:hover {
       color: black;
       border-top: 5px solid black;
@@ -107,6 +104,7 @@ const Link1 = styled(Link)`
 
 const H11 = styled.h1`
   font-family: 'Crimson Text', serif;
+  font-size: 2.4rem;
   margin: 0;
 `
 
