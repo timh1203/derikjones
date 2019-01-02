@@ -37,23 +37,20 @@ const Div1 = styled.div`
       "nav"
   }
 `
-
 const Div2 = styled.div`
   grid-area: 'logo';
-
+  text-align: left;
   @media (max-width: 768px) {
     text-align: center;  
   }
 `
-
 const Div3 = styled.div`
   grid-area: 'nav';
   display: grid;
   justify-items: end;
-  padding-right: 1rem;
-  margin: 1rem 0;
+  padding-right: 2rem;
+  margin: 2rem 0;
 `
-
 const Img1 = styled.img`
   width: 30%;
   margin: 1rem;
@@ -62,14 +59,12 @@ const Img1 = styled.img`
     width: 75%;
   }
 `
-
 const Link1 = styled(Link)`
   color: white;
   font-size: 0.8rem;
   text-decoration: none;
   border-right: 5px solid white;
-  padding: 0.2rem;
-  
+  padding: 1rem;
   &:hover {
     text-decoration: none;
     border-right: 5px solid black;
@@ -77,10 +72,10 @@ const Link1 = styled(Link)`
     text-shadow: 0 0 3px white;
   }
 `
-
 const H11 = styled.h1`
   font-family: 'Crimson Text', serif;
   margin: 0;
+  font-size: 2.4rem;
 `
 
 export default Nav

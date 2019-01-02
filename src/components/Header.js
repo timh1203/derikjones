@@ -29,44 +29,40 @@ const Section1 = styled.div`
   background-repeat: no-repeat;
   height: 100vh;
 `
-
 const Div1 = styled.div`
   text-align: center;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 `
-
 const H11 = styled.h1`
-  font-size: 10rem;
+  font-size: 15rem;
   margin: 0;
   color: white;
   text-decoration: underline;
   font-family: 'Crimson Text', serif;
   text-shadow: 0 0 20px black;
-
+  padding-bottom: 2rem;
   @media (max-width: 768px) {
     font-size: 5rem;
   }
 `
-
 const H12 = styled.h1`
+  font-size: 3rem;
+  margin-bottom: 2rem;
   &:hover {
     text-shadow: 0 0 5px white;
     color: black;
   }
 `
-
 const P1 = styled.p`
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0;
   color: white;
   font-style: italic;
-
   @media (max-width: 768px) {
     font-size: 1rem;
   }
 `
-
 const Link1 = styled(Link)`
   text-decoration: none;
   color: white;
