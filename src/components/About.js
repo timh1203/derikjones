@@ -7,20 +7,20 @@ const About = () => (
   <Section1 id="About">
     <Div1>
       <Div2>
-        <H1a>Whatever good things we build end up building us.</H1a>
+        <H1>Whatever good things we build end up building us.</H1>
         <P1>- Jim Rohn</P1>
       </Div2>
       <Div3>
         <Div4>
           <Img1 src="https://i.imgur.com/vxJq5Wl.jpg" />
-          <div>
-            <a href="https://www.linkedin.com/in/derik-jones-b3722b102/" target="_blank">
+          <Div5>
+            <A1 href="https://www.linkedin.com/in/derik-jones-b3722b102/" target="_blank">
               <FaLinkedinSquare1 size={45} />
-            </a>
-            <a href="https://www.instagram.com/rad_jones_photography/" target="_blank">
+            </A1>
+            <A1 href="https://www.instagram.com/rad_jones_photography/" target="_blank">
               <FaInstagram1 size={45} />
-            </a>
-          </div>
+            </A1>
+          </Div5>
         </Div4>
         <P2>
           I am an architectural designer with a strong passion for sustainability and innovation. My goal in Architecture and photography is to reveal the beauty in ordinary things. To show the detail and the unique aspects of life that may be missed when one isn't paying attention. To draw people in to not just see the world, but to experience it through my designs. To inspire others to go outside the box, to live, to explore, and to adventure.
@@ -77,7 +77,9 @@ const Div4 = styled.div`
     border: none;
   }
 `
-const H1a = styled.h1`
+const Div5 = styled.div`
+`
+const H1 = styled.h1`
   font-family: 'Crimson Text', serif;
   padding: 1.4rem;
   `
@@ -110,6 +112,8 @@ const Img1 = styled.img`
   @media (max-width: 376px) {
     width: 70%;
   }
+`
+const A1 = styled.a`
 `
 const FaLinkedinSquare1 = styled(FaLinkedinSquare)`
   color: #0077B5;

@@ -18,6 +18,14 @@ const Section1 = styled.section`
   margin: 3rem 0;
 `
 const H1a = styled.h1`
+  border-top: 5px solid black;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: center;
+  @media (max-width: 400px) {
+    width: 50%;
+  }
 `
 const Hr1 = styled.hr`
   width: 80%;
